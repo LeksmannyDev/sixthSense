@@ -3,7 +3,7 @@ import { homeAsset } from "./homeAsset";
 
 const Banner1 = () => {
   return (
-    <section className="relative w-full h-[350px] sm:h-[350px] lg:h-[500px] mb-15 overflow-hidden">
+    <section className="relative w-full h-[350px] sm:h-[350px] lg:h-[500px] overflow-hidden">
       {/* Enhanced Background Container */}
       <div className="flex justify-center items-center">
         <div className="relative w-full h-[350px] sm:h-[350px] lg:h-[500px] overflow-hidden">
@@ -17,8 +17,8 @@ const Banner1 = () => {
       </div>
 
       {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mx-auto w-full max-w-5xl">
-        <p className="text-2xl sm:text-3xl md:text-4xl text-white font-metropolis">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mx-auto w-full max-w-4xl">
+        <p className="text-xl sm:text-2xl md:text-3xl text-white font-metropolis">
           At SixthSense Leadership, we understand that the future of every
           organization starts with its leaders; hence, We empower leaders to
           transform organizations and drive sustainable growth through

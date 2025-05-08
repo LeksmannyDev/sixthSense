@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 ${
-        scrolled ? "bg-black opacity-150" : "bg-transparent"
+        scrolled ? "bg-black opacity-80" : "bg-transparent"
       } backdrop-blur-sm h-15 transition-colors duration-300`}
     >
       <nav className="max-w-8xl mx-auto flex items-center justify-between h-full px-4 sm:px-6 md:px-8">
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation (now only visible on lg and up) */}
-        <div className="hidden lg:flex items-center h-full">
+        <div className="hidden xl:flex items-center h-full">
           <ul className="flex space-x-2 text-center ml-auto h-full">
             {navItems.map((item) => (
               <li key={item.slug} className="h-full flex items-center">
@@ -79,7 +79,7 @@ const Header = () => {
         </div>
 
         {/* Mobile menu button (now visible on md and below) */}
-        <div className="lg:hidden flex items-center h-full">
+        <div className="xl:hidden flex items-center h-full">
           <FaBars
             className="text-3xl text-white cursor-pointer"
             onClick={toggleMenu}
@@ -88,7 +88,7 @@ const Header = () => {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed top-0 right-0 w-full h-screen bg-black z-60 transition-transform duration-300 ease-in-out lg:hidden ${
+          className={`fixed top-0 right-0 w-full h-screen bg-black z-60 transition-transform duration-300 ease-in-out xl:hidden ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >

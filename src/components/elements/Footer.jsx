@@ -4,7 +4,7 @@ import { assets } from "../../assets/asset";
 
 const Footer = () => {
   return (
-    <footer className="text-white mt-2">
+    <footer className="text-white">
       {/* Newsletter */}
       <div className="bg-gradient-blue w-full text-font px-6 sm:px-10 lg:px-20 py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-6 gap-x-60">
         {/* Left Side - Subscribe Text */}
