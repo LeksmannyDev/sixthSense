@@ -15,7 +15,7 @@ const ContactForm = () => {
       <div className="py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] mx-auto">
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10">
           {/* LEFT COLUMN */}
-          <div className="w-full lg:w-[30%] space-y-4 md:space-y-6">
+          <div className="w-full 2xl:w-[30%] md:w-[100%] sm:w-[100%] space-y-4 md:space-y-6">
             {[
               { img: phone, title: "Phone Number", desc: "+234 708 040 1080" },
               {
@@ -38,7 +38,7 @@ const ContactForm = () => {
                 key={idx}
                 className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md"
               >
-                <div className="bg-[#6391C21A] rounded-full flex items-center justify-center p-3 sm:p-4">
+                <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[48px] sm:min-h-[48px]">
                   <img
                     src={item.img}
                     alt=""
@@ -57,7 +57,7 @@ const ContactForm = () => {
             ))}
 
             <div className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
-              <div className="bg-[#6391C21A] rounded-full flex items-center justify-center p-3 sm:p-4">
+              <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[48px] sm:min-h-[48px]">
                 <img
                   src={share}
                   alt=""
@@ -83,7 +83,7 @@ const ContactForm = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="w-full lg:w-[70%] p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
+          <div className="w-full 2xl:w-[70%]  md:w-[100%]  sm:w-[100%] p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
             <h2 className="font-semibold text-[18px] sm:text-[19px] md:text-[20px] mb-2">
               Send Message
             </h2>
