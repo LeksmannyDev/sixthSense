@@ -7,6 +7,7 @@ import WhoWeAre from "./components/pages/WhoWeAre";
 import Contact from "./components/pages/Contact";
 import WhatWeDo from "./components/pages/WhatWeDo";
 import Blogs from "./components/pages/Blogs";
+import Events from "./components/pages/Events";
 
 function App() {
   return (
@@ -50,6 +51,16 @@ function App() {
               <Layout>
                 <PageTransitionWrapper>
                   <WhatWeDo />
+                </PageTransitionWrapper>
+              </Layout>
+            }
+          />
+          <Route
+            path="/events"
+            element={
+              <Layout>
+                <PageTransitionWrapper>
+                  <Events />
                 </PageTransitionWrapper>
               </Layout>
             }
