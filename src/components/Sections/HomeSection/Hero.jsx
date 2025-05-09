@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import { homeAsset } from "./homeAsset";
+import BackgroundDesign from "../../shared/BackgroundDesign";
 
 const Hero = () => {
   const homeContent = {
@@ -12,19 +11,13 @@ const Hero = () => {
       { text: "Transformation ", color: "text-red" },
     ],
     description:
-      "Let’s help you position your organization for sustainable success",
+      "Let's help you position your organization for sustainable success",
     cta1: "schedule a free call",
   };
+
   return (
     <div className="w-full overflow-hidden font-metropolis">
-      <div
-        role="img"
-        aria-label="About Us - Ejideson Prestige Empresa Limited"
-        className="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${homeAsset.Hero})` }}
-      >
-        <div className="absolute inset-0 bg-black/50"></div>
-
+      <BackgroundDesign>
         <div className="max-w-5xl text-center z-10 relative px-2">
           <h1 className="text-3xl sm:text-5xl md:text-6xl uppercase mb-4 font-medium flex flex-wrap justify-center">
             {homeContent.title.map((part, i) => (
@@ -49,7 +42,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </BackgroundDesign>
     </div>
   );
 };

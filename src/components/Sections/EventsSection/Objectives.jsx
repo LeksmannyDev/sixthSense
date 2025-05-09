@@ -3,8 +3,8 @@ import { objectives } from "./eventsAssets";
 
 const Objectives = () => {
   return (
-    <section className="bg-light lg:py-35 py-16 px-4 sm:px-8 sm:pb-40 pb-20 lg:px-16">
-      <div className="max-w-5xl mb-5 mx-auto">
+    <section className="bg-light lg:py-40 py-16 px-4 sm:px-8  lg:px-16">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-[40px] text-center font-medium text-blue mb-10">
           Programme Objectives
         </h2>

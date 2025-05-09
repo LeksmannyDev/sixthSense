@@ -6,9 +6,7 @@ import mark from "../../../assets/Events/mark.jpg";
 import class1 from "../../../assets/Events/class.jpg";
 import banner1 from "../../../assets/Events/gal3.jpg";
 import banner2 from "../../../assets/Events/gal2.jpg";
-import gallery from "../../../assets/Events/gallery.png";
 import calendar from "../../../assets/Events/calendar.png";
-import { number } from "framer-motion";
 
 export const eventAsset = {
   background1,
@@ -16,7 +14,6 @@ export const eventAsset = {
   background3,
   class1,
   banner1,
-  gallery,
   calendar,
   banner2,
 };
@@ -71,5 +68,68 @@ export const objectives = [
     title: "Create Ripple Effects of Lasting<br/> Transformation",
     description:
       "Empower participants to drive and sustain positive change that impacts organizations.",
+  },
+];
+
+export const modules = [
+  {
+    id: 1,
+    title: "Leadership Foundations for the Future",
+    points: [
+      "Key principles of effective leadership",
+      "Building emotional intelligence and self-awareness",
+      "Developing a clear leadership vision and purpose",
+      "Influence-based leadership",
+    ],
+  },
+  {
+    id: 2,
+    title: "Strategic Thinking for Competitive Advantage",
+    points: [
+      "Critical thinking and problem-solving strategies",
+      "Long-term planning and decision-making frameworks",
+      "Anticipating industry trends and disruptions",
+      "Aligning organizational strategy with visionary leadership",
+    ],
+  },
+  {
+    id: 3,
+    title: "Leading Through Change and Disruption",
+    points: [
+      "Adaptive leadership techniques for dynamic environments",
+      "Building resilience and agility in teams",
+      "Embracing uncertainty and driving transformation",
+      "Leading with clarity and confidence during times of disruption",
+    ],
+  },
+  {
+    id: 4,
+    title: "Innovation and Creative Problem Solving",
+    points: [
+      "Encouraging a culture of innovation and continuous improvement",
+      "Techniques for creative problem-solving and risk-taking",
+      "Leading cross-functional teams for innovative solutions",
+      "Tools for fostering disruptive thinking and driving growth",
+    ],
+  },
+  {
+    id: 5,
+    title: "Mastering Change Management",
+    points: [
+      "Understanding the psychology of change",
+      "Tools for planning, managing, and implementing change initiatives",
+      "Overcoming resistance to change and fostering buy-in",
+      "Measuring and sustaining change efforts for long-term success",
+    ],
+  },
+  {
+    id: 6,
+    title: "Creating a Legacy of Transformational Leadership",
+    points: [
+      "Building a sustainable leadership pipeline",
+      "Leading with purpose to drive lasting impact",
+      "Mentoring and developing future leaders",
+      "Creating ripple effects of transformation in organizations and communities",
+    ],
   },
 ];

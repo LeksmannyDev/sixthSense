@@ -12,6 +12,8 @@ import integrity from "../assets/Who/integrity.png";
 import whoBanner2 from "../assets/Who/whoBanner2.jpg";
 import download from "../assets/Who/download.png";
 import graphic from "../assets/Home/Graphic.png";
+import home from "../assets/Home/home.jpg";
+import arrow from "../assets/Home/arrow.png";
 
 export const assets = {
   logo,
@@ -28,6 +30,8 @@ export const assets = {
   whoBanner2,
   download,
   graphic,
+  home,
+  arrow,
 };
 
 export const coreValues = [
