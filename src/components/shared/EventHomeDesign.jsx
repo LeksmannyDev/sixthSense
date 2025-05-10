@@ -10,11 +10,11 @@ const EventHomeDesign = ({ backgroundImage, topText, title, subtitle }) => {
         className="min-h-[80vh] sm:min-h-[90vh] md:min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-center relative"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="absolute inset-0 bg-[#000000CC]"></div>
 
         {/* Content */}
         <div className="max-w-4xl w-full text-center z-10 relative px-2">
-          <p className="text-red text-lg sm:text-xl md:text-2xl font-medium mb-4 sm:mb-5">
+          <p className="text-red uppercase text-lg sm:text-xl md:text-2xl font-medium mb-4 sm:mb-5">
             {topText}
           </p>
 
@@ -22,7 +22,7 @@ const EventHomeDesign = ({ backgroundImage, topText, title, subtitle }) => {
             {title}
           </h1>
 
-          <p className="text-sm sm:text-lg md:text-[25px] py-6 sm:py-8 text-light">
+          <p className="text-sm sm:text-lg md:text-[22px] py-6 text-light">
             {subtitle}
           </p>
 

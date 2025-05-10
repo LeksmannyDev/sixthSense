@@ -14,6 +14,18 @@ import download from "../assets/Who/download.png";
 import graphic from "../assets/Home/Graphic.png";
 import home from "../assets/Home/home.jpg";
 import arrow from "../assets/Home/arrow.png";
+import faculty1 from "../assets/Faculty/1.png";
+import faculty2 from "../assets/Faculty/2.jpg";
+import faculty3 from "../assets/Faculty/3.jpg";
+import faculty4 from "../assets/Faculty/4.png";
+import faculty5 from "../assets/Faculty/5.jpg";
+import faculty6 from "../assets/Faculty/6.jpg";
+import faculty7 from "../assets/Faculty/7.jpg";
+import faculty8 from "../assets/Faculty/8.jpg";
+import faculty9 from "../assets/Faculty/9.png";
+import faculty10 from "../assets/Faculty/10.jpg";
+import faculty11 from "../assets/Faculty/11.jpg";
+import faculty12 from "../assets/Faculty/12.jpg";
 
 export const assets = {
   logo,
@@ -66,4 +78,19 @@ export const coreValues = [
     description:
       "We Are Always Raising The Bar To Make Our Next Work Our Best.",
   },
+];
+
+export const facultyList = [
+  { name: "DEMOLA ADERBIGBE", image: faculty1 },
+  { name: "KUNLE AKIODE, PhD", image: faculty2 },
+  { name: "EZU UWAMOA", image: faculty3 },
+  { name: "GOSPEL OBELE", image: faculty4 },
+  { name: "LESLIE GEORGE", image: faculty5 },
+  { name: "BRIGHT UWEKENGA MkD, FIMC, CMC", image: faculty6 },
+  { name: "OLAWALE THOMAS", image: faculty7 },
+  { name: "TINUKU OLAOYE", image: faculty8 },
+  { name: "GABRIEL BALOGUN", image: faculty9 },
+  { name: "ADERINSOLA JOLAOSHO", image: faculty10 },
+  { name: "SOGO SKEREBE", image: faculty11 },
+  { name: "DAPO ONAMUSI", image: faculty12 },
 ];

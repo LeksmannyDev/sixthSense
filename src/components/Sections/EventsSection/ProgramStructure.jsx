@@ -15,24 +15,25 @@ const ProgramStructure = () => {
 
         <div className="space-y-20">
           {modules.map((module, index) => {
-            const isOdd = index % 2 === 0; // index 0 = Module 1
+            const isOdd = index % 2 === 0;
+
             return (
               <div
                 key={module.id}
-                className="relative flex flex-col md:flex-row items-center justify-between"
+                className="relative flex flex-col md:flex-row items-center justify-between gap-6"
               >
-                {/* Left side content (Even modules only) */}
+                {/* Left side (Even modules only) */}
                 <div
                   className={`w-full md:w-5/12 text-justify ${
                     isOdd ? "order-2" : "order-2 md:order-1"
                   }`}
                 >
                   {!isOdd && (
-                    <div className=" text-right w-full">
-                      <h3 className="text-2xl ml-25 lg:max-w-[100%] mx-auto font-medium text-blue  mb-3">
+                    <div className="text-right w-full">
+                      <h3 className="text-2xl ml-6 lg:max-w-full mx-auto font-medium text-blue mb-3">
                         {module.title}
                       </h3>
-                      <ul className="list-disc  space-y-2 text-gray text-right">
+                      <ul className="list-disc space-y-2 text-gray text-right">
                         {module.points.map((point, i) => (
                           <li key={i} className="ml-auto w-fit">
                             {point}
@@ -43,14 +44,14 @@ const ProgramStructure = () => {
                   )}
                 </div>
 
-                {/* Center Module Label */}
-                <div className="w-full md:w-2/12 flex justify-center items-center order-1 md:order-2 my-4 md:my-0">
-                  <div className=" text-red font-bold px-4 uppercase py-2 rounded-full text-xl text-center">
+                {/* Module Label */}
+                <div className="w-full md:w-2/12 flex justify-center items-center order-1 md:order-2 my-1 md:my-0">
+                  <div className="text-red font-bold px-4 uppercase py-2 rounded-full text-xl text-center">
                     Module {module.id}
                   </div>
                 </div>
 
-                {/* Right side content (Odd modules only) */}
+                {/* Right side (Odd modules only) */}
                 <div
                   className={`w-full md:w-5/12 ${
                     isOdd ? "order-3" : "order-3 md:order-3"
@@ -58,12 +59,14 @@ const ProgramStructure = () => {
                 >
                   {isOdd && (
                     <div className="text-left">
-                      <h3 className="text-2xl mr-30 lg:max-w-[75%] mx-auto font-medium text-blue  mb-3">
+                      <h3 className="text-2xl mr-6 lg:max-w-[75%] font-medium text-blue mb-3">
                         {module.title}
                       </h3>
-                      <ul className="list-disc pl-5 space-y-2 max-w-[400px] text-gray-700 text-left">
+                      <ul className="list-disc pl-5 space-y-2 max-w-[400px] text-gray text-left">
                         {module.points.map((point, i) => (
-                          <li key={i}>{point}</li>
+                          <li key={i} className="mr-auto w-fit">
+                            {point}
+                          </li>
                         ))}
                       </ul>
                     </div>

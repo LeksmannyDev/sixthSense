@@ -7,6 +7,10 @@ import class1 from "../../../assets/Events/class.jpg";
 import banner1 from "../../../assets/Events/gal3.jpg";
 import banner2 from "../../../assets/Events/gal2.jpg";
 import calendar from "../../../assets/Events/calendar.png";
+import program from "../../../assets/Events/Program.jpg";
+import news from "../../../assets/Events/news.jpg";
+import eventBanner from "../../../assets/Events/eventBanner.jpg";
+import lmcGraphic from "../../../assets/Events/LmcGraphic.png";
 
 export const eventAsset = {
   background1,
@@ -16,6 +20,10 @@ export const eventAsset = {
   banner1,
   calendar,
   banner2,
+  program,
+  news,
+  eventBanner,
+  lmcGraphic,
 };
 
 export const quoteDetails = [

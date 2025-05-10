@@ -98,7 +98,7 @@ const Header = () => {
                         <li key={subitem.path}>
                           <Link
                             to={subitem.path}
-                            className="block px-4 py-3 bg-white text-sm hover:text-white hover:border-[#ff0c10] hover:border-b-2 hover:bg-[#ED1F241A] transition-colors duration-300"
+                            className="block px-4 py-3 bg-white text-sm hover:text-white hover:border-[#ff0c10] hover:border-b-2 hover:bg-[#000000] transition-colors duration-300"
                             onClick={() => handleNavClick("events")}
                           >
                             {subitem.name}

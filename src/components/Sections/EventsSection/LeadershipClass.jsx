@@ -19,10 +19,7 @@ const LeadershipClass = () => {
           only respond but anticipate and leverage these shifts. The result? A
           critical demand for transformational leaders who can guide their
           organizations through uncertainty and drive meaningful change.
-        </p>
-
-        {/* Research Paragraph */}
-        <p className="text-base sm:text-lg md:text-[21px]">
+          <br />
           Yet research reveals that nearly 70% of organizations struggle with
           transformation due to ineffective leadership (McKinsey & Co.), and a
           Deloitte survey shows only 14% of companies are confident in their
@@ -54,10 +51,7 @@ const LeadershipClass = () => {
           real-world case studies, interactive exercises, and thought-provoking
           discussions, participants gain actionable insights and skills that
           directly elevate their leadership impact.
-        </p>
-
-        {/* Outcome Paragraph */}
-        <p className="text-base sm:text-lg md:text-[21px] tracking-wide">
+          <br />
           Leaders who go through this program will emerge as resilient,
           visionary leaders, ready to inspire innovation and foster a culture of
           change-readiness—creating ripple effects of positive, lasting
