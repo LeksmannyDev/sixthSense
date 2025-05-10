@@ -1,19 +1,19 @@
 import React from "react";
-import phone from "../../../assets/Contact/phone icon.png";
-import envelope from "../../../assets/Contact/gmail icon.png";
-import location from "../../../assets/Contact/location icon.png";
-import globe from "../../../assets/Contact/website icon.png";
-import share from "../../../assets/Contact/Vector-4.png";
-import facebook from "../../../assets/Contact/fb icon.png";
-import pinterest from "../../../assets/Contact/pin icon.png";
-import twitter from "../../../assets/Contact/twi icon.png";
-import youtube from "../../../assets/Contact/youtube icon.png";
+import phone from "../../../assets/Contact/phone icon.svg";
+import envelope from "../../../assets/Contact/gmail icon.svg";
+import location from "../../../assets/Contact/location icon.svg";
+import globe from "../../../assets/Contact/website icon.svg";
+import share from "../../../assets/Contact/Vector-4.svg";
+import facebook from "../../../assets/Contact/fb icon.svg";
+import pinterest from "../../../assets/Contact/pin icon.svg";
+import twitter from "../../../assets/Contact/twi icon.svg";
+import youtube from "../../../assets/Contact/youtube icon.svg";
 
 const ContactForm = () => {
   return (
     <section id="contact" className="bg-white text-gray">
       <div className="py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] mx-auto">
-        <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10">
+        <div className="flex flex-col items-center justify-center lg:flex-row gap-6 md:gap-8 lg:gap-10">
           {/* LEFT COLUMN */}
           <div className="w-full 2xl:w-[30%] md:w-[100%] sm:w-[100%] space-y-4 md:space-y-6">
             {[
@@ -33,31 +33,53 @@ const ContactForm = () => {
                 title: "Website",
                 desc: "www.sixthsenseleadership.com",
               },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md"
-              >
-                <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[48px] sm:min-h-[48px]">
-                  <img
-                    src={item.img}
-                    alt=""
-                    className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
-                  />
-                </div>
-                <div className="mt-1">
-                  <h3 className="font-semibold text-[15px] sm:text-[16px] md:text-[17px] text-gray">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm max-w-xs mx-auto text-gray">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
+            ].map((item, idx) => {
+              let link = "#";
+              if (item.title === "Phone Number") link = `tel:${item.desc}`;
+              else if (item.title === "Email Address")
+                link = `mailto:${item.desc}`;
+              else if (item.title === "Website") link = `https://${item.desc}`;
+              else if (item.title === "Location")
+                link = `https://www.google.com/maps/search/${encodeURIComponent(
+                  item.desc
+                )}`;
+
+              return (
+                <a
+                  key={idx}
+                  href={link}
+                  target={
+                    item.title === "Phone Number" ||
+                    item.title === "Email Address"
+                      ? "_self"
+                      : "_blank"
+                  }
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md ">
+                    <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[55px] sm:min-h-[55px]">
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
+                      />
+                    </div>
+                    <div className="mt-1">
+                      <h3 className="font-semibold text-[15px] sm:text-[16px] md:text-[17px] text-gray">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm max-w-xs mx-auto text-gray">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
 
             <div className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
-              <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[48px] sm:min-h-[48px]">
+              <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[55px] sm:min-h-[55px]">
                 <img
                   src={share}
                   alt=""
@@ -69,13 +91,36 @@ const ContactForm = () => {
                   Social Media
                 </h3>
                 <div className="flex gap-3 sm:gap-4">
-                  {[facebook, pinterest, twitter, youtube].map((icon, idx) => (
-                    <img
+                  {[
+                    {
+                      icon: facebook,
+                      link: "#",
+                    },
+                    {
+                      icon: pinterest,
+                      link: "#",
+                    },
+                    {
+                      icon: twitter,
+                      link: "#",
+                    },
+                    {
+                      icon: youtube,
+                      link: "#",
+                    },
+                  ].map(({ icon, link }, idx) => (
+                    <a
                       key={idx}
-                      src={icon}
-                      alt=""
-                      className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
-                    />
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={icon}
+                        alt="social-icon"
+                        className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
+                      />
+                    </a>
                   ))}
                 </div>
               </div>
@@ -93,7 +138,7 @@ const ContactForm = () => {
               today, and let's start a meaningful conversation!
             </p>
 
-            <form className="space-y-3 sm:space-y-4">
+            <form className="space-y-3 sm:space-y-5 py-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
                 {[
                   { name: "name", placeholder: "Your Name" },
@@ -111,14 +156,14 @@ const ContactForm = () => {
                     type={type}
                     placeholder={placeholder}
                     required
-                    className="border-[0.5px] rounded-md border-[#a8a8a8] placeholder:text-font placeholder:text-[14px] sm:placeholder:text-[15px] md:placeholder:text-[16px] placeholder:text-[#0c0c0c] p-3 sm:p-4 w-full"
+                    className="border-[0.5px] rounded-md border-[#a8a8a8] placeholder:text-[14px] sm:placeholder:text-[15px] md:placeholder:text-[16px] placeholder:text-[#0c0c0c] p-3 sm:p-4 w-full"
                   />
                 ))}
               </div>
               <textarea
                 rows="5"
                 placeholder="Subject"
-                className="border-[0.5px] overflow-hidden mt-4 sm:mt-5 md:mt-6 rounded-md border-[#a8a8a8] placeholder:text-font placeholder:text-[14px] sm:placeholder:text-[15px] md:placeholder:text-[16px] placeholder:text-[#0c0c0c] p-4 sm:p-5 w-full"
+                className="border-[0.5px] overflow-hidden mt-4 sm:mt-5 md:mt-6 rounded-md border-[#a8a8a8] placeholder:text-[14px] sm:placeholder:text-[15px] md:placeholder:text-[16px] placeholder:text-[#0c0c0c] p-4 sm:p-5 w-full"
               ></textarea>
               <button
                 type="submit"

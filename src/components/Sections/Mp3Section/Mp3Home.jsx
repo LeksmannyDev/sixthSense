@@ -14,6 +14,9 @@ const Mp3Home = () => {
         </>
       }
       subtitle="Managing People, Processes, and Performance"
+      ctaLink="/contact-us"
+      ctaText="apply now"
+      brochureText="Download Brochure"
     />
   );
 };

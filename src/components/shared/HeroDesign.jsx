@@ -11,12 +11,12 @@ const HeroDesign = ({ title }) => {
             {title}
           </h1>
 
-          <p className="text-[14px] sm:text-[18px] md:text-[21px] mt-3 max-w-5xl mx-auto text-font text-light">
+          <p className="text-[14px] sm:text-[18px] md:text-[21px] mt-3 max-w-5xl mx-auto text-light">
             We empower leaders and transform organizations with innovative,
             tailored solutions. Together, we shape the future of leadership.
           </p>
 
-          <div className="mt-6 flex flex-wrap justify-center text-font gap-3 sm:gap-4">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <Link
               to="/contact-us"
               className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300"

@@ -14,6 +14,9 @@ const EventsHome = () => {
         </>
       }
       subtitle="The Transformational Leadership Masterclass"
+      ctaLink="/contact-us"
+      ctaText="apply now"
+      brochureText="Download Brochure"
     />
   );
 };

@@ -11,6 +11,8 @@ import program from "../../../assets/Events/Program.jpg";
 import news from "../../../assets/Events/news.jpg";
 import eventBanner from "../../../assets/Events/eventBanner.jpg";
 import lmcGraphic from "../../../assets/Events/LmcGraphic.png";
+import lmcGraphic2 from "../../../assets/Events/LmcGraphic2.svg";
+import Profile from "../../../assets/Events/principal.svg";
 
 export const eventAsset = {
   background1,
@@ -24,6 +26,8 @@ export const eventAsset = {
   news,
   eventBanner,
   lmcGraphic,
+  lmcGraphic2,
+  Profile,
 };
 
 export const quoteDetails = [

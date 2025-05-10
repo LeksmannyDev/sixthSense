@@ -2,7 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../../assets/asset";
 
-const EventHomeDesign = ({ backgroundImage, topText, title, subtitle }) => {
+const EventHomeDesign = ({
+  backgroundImage,
+  topText,
+  ctaLink,
+  ctaText,
+  brochureText,
+  title,
+  subtitle,
+}) => {
   return (
     <div className="w-full overflow-hidden">
       <div
@@ -26,16 +34,16 @@ const EventHomeDesign = ({ backgroundImage, topText, title, subtitle }) => {
             {subtitle}
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-9">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-9">
             <Link
-              to="/contact-us"
+              to={ctaLink}
               className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full font-medium transition duration-300"
             >
-              apply now
+              {ctaText}
             </Link>
 
             <button className="border-3 border-[#ff0c10] text-center uppercase text-xs sm:text-sm md:text-md text-white font-medium cursor-pointer px-5 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full transition-all duration-300 bg-transparent flex items-center gap-2">
-              Download Brochure
+              {brochureText}
               <img
                 src={assets.download}
                 alt="Download icon"

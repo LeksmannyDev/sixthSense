@@ -14,6 +14,9 @@ const LmcHome = () => {
         </>
       }
       subtitle="Executive Group Coaching for High-Impact Management Teams"
+      ctaLink="/contact-us"
+      ctaText="apply now"
+      brochureText="Download Brochure"
     />
   );
 };

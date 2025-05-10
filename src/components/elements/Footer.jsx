@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="text-white">
       {/* Newsletter */}
-      <div className="bg-gradient-blue w-full text-font px-6 sm:px-10 lg:px-20 py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-6 gap-x-60">
+      <div className="bg-gradient-blue w-full px-6 sm:px-10 lg:px-20 py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-6 gap-x-60">
         {/* Left Side - Subscribe Text */}
         <div className="flex items-center gap-3 text-white w-full lg:w-auto justify-center lg:justify-start">
           <img src={assets.mail} alt="Mail icon" className="h-10 w-10" />
@@ -20,7 +20,7 @@ const Footer = () => {
           <input
             type="email"
             placeholder="YOUR EMAIL ADDRESS"
-            className="flex-1 px-5 text-xs sm:text-sm text-[#1F3864] placeholder:text-md text-font font-medium focus:outline-none placeholder-[#1F3864]"
+            className="flex-1 px-5 text-xs sm:text-sm text-[#1F3864] placeholder:text-md font-medium focus:outline-none placeholder-[#1F3864]"
           />
           <button className="bg-red px-4 sm:px-6 text-xs sm:text-sm text-white font-semibold ">
             GET STARTED
@@ -31,10 +31,10 @@ const Footer = () => {
       {/* Contact Info */}
       <div className="w-full bg-[#333333] mx-auto px-6 sm:px-10 lg:px-20 py-10 md:py-20 text-center">
         {/* Heading */}
-        <h4 className="text-green font-bold text-2xl sm:text-3xl text-red md:text-4xl uppercase mb-2">
+        <h4 className="font-bold text-2xl sm:text-3xl text-red md:text-4xl uppercase mb-2">
           Our Contact
         </h4>
-        <h2 className="text-3xl sm:text-5xl md:text-6xl text-font mt-4 font-medium mb-8">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl mt-4 font-medium mb-8">
           How to Reach Us
         </h2>
 
