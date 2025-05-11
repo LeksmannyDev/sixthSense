@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
       </div>
 
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 mx-auto max-w-6xl h-full">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 mx-auto max-w-5xl h-full">
         <p className="text-red text-lg sm:text-xl md:text-2xl font-semibold uppercase">
           OUR EDGE
         </p>

@@ -4,7 +4,7 @@ import { quoteDetails } from "./eventsAssets";
 const QuoteBanner = () => {
   return (
     <div className="w-full px-4 py-12 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center gap-[10%]">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-center items-center gap-[10%]">
         {quoteDetails.map((quote, index) => (
           <div key={index} className="text-center w-full">
             <p className="text-xl sm:text-2xl md:text-[30px] text-gray font-light mb-4 md:mb-6">

@@ -5,6 +5,8 @@ import Mp3Class from "../Sections/Mp3Section/Mp3Class";
 import QuoteMp32 from "../Sections/Mp3Section/QuoteMp32";
 import Mp3Banner from "../Sections/Mp3Section/Mp3Banner";
 import Mp3Numbers from "../Sections/Mp3Section/Mp3Numbers";
+import CourseContent from "../Sections/Mp3Section/CourseContent";
+import StandToGain from "../Sections/Mp3Section/StandToGain";
 
 const Mp3 = () => {
   return (
@@ -15,6 +17,8 @@ const Mp3 = () => {
       <QuoteMp32 />
       <Mp3Banner />
       <Mp3Numbers />
+      <CourseContent />
+      <StandToGain />
     </>
   );
 };

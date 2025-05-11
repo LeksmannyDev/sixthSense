@@ -26,7 +26,7 @@ const Methodology = () => {
 
   return (
     <section className="py-12 sm:py-14 md:py-25 bg-light px-4 sm:px-6 lg:px-12 xl:px-20">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-5xl">
         <h2 className="font-medium text-2xl sm:text-3xl md:text-[40px] text-center text-blue mb-10">
           Methodology
         </h2>

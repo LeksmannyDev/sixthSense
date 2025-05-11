@@ -20,7 +20,7 @@ const ProgramStructure = () => {
             return (
               <div
                 key={module.id}
-                className="relative flex flex-col md:flex-row items-center justify-between gap-6"
+                className="relative flex flex-col md:flex-row items-center justify-between gap-y-3 gap-6"
               >
                 {/* Left side (Even modules only) */}
                 <div
@@ -51,7 +51,7 @@ const ProgramStructure = () => {
                   </div>
                 </div>
 
-                {/* Right side (Odd modules only) */}
+                {/* Right side */}
                 <div
                   className={`w-full md:w-5/12 ${
                     isOdd ? "order-3" : "order-3 md:order-3"

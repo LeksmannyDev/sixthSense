@@ -21,7 +21,7 @@ const Brands = () => {
       <h2 className="text-2xl md:text-[40px] font-medium text-blue mb-10 sm:mb-5">
         Brands we have Touched
       </h2>
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row gap-4 md:gap-2">
+      <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row gap-4 md:gap-2">
         {images.map((item, index) => (
           <div
             key={index}

@@ -145,3 +145,180 @@ export const modules = [
     ],
   },
 ];
+
+export const courseContent = [
+  {
+    id: 1,
+    title: "Leadership Foundations for the Future",
+    points: [
+      "Key principles of effective leadership",
+      "Building emotional intelligence and self-awareness",
+      "Developing a clear leadership vision and purpose",
+      "Influence-based leadership",
+    ],
+  },
+  {
+    id: 2,
+    title: "Strategic Thinking for Competitive Advantage",
+    points: [
+      "Critical thinking and problem-solving strategies",
+      "Long-term planning and decision-making frameworks",
+      "Anticipating industry trends and disruptions",
+      "Aligning organizational strategy with visionary leadership",
+    ],
+  },
+  {
+    id: 3,
+    title: "Leading Through Change and Disruption",
+    points: [
+      "Adaptive leadership techniques for dynamic environments",
+      "Building resilience and agility in teams",
+      "Embracing uncertainty and driving transformation",
+      "Leading with clarity and confidence during times of disruption",
+    ],
+  },
+  {
+    id: 4,
+    title: "Innovation and Creative Problem Solving",
+    points: [
+      "Encouraging a culture of innovation and continuous improvement",
+      "Techniques for creative problem-solving and risk-taking",
+      "Leading cross-functional teams for innovative solutions",
+      "Tools for fostering disruptive thinking and driving growth",
+    ],
+  },
+  {
+    id: 5,
+    title: "Mastering Change Management",
+    points: [
+      "Understanding the psychology of change",
+      "Tools for planning, managing, and implementing change initiatives",
+      "Overcoming resistance to change and fostering buy-in",
+      "Measuring and sustaining change efforts for long-term success",
+    ],
+  },
+  {
+    id: 6,
+    title: "Creating a Legacy of Transformational Leadership",
+    points: [
+      "Building a sustainable leadership pipeline",
+      "Leading with purpose to drive lasting impact",
+      "Mentoring and developing future leaders",
+      "Creating ripple effects of transformation in organizations and communities",
+    ],
+  },
+];
+
+export const courseModules = [
+  {
+    id: 1,
+    title: "Managing People",
+    points: [
+      "Leadership and Team Dynamics",
+      "Effective Communication",
+      "Conflict Resolution",
+    ],
+    details: [
+      [
+        "Understanding leadership styles and their impact",
+        "Emotional intelligence for middle managers",
+        "Mastering Delegation: Empowering without losing control",
+      ],
+      [
+        "The 7 Cs: Crafting clear and compelling messages",
+        "Active listening and handling tough conversations",
+        "Negotiation and persuasion Skills for managers",
+      ],
+      [
+        "Identifying the root causes of workplace conflicts",
+        "Turning conflict into collaboration",
+        "Building trust and fostering psychological safety in teams",
+      ],
+    ],
+  },
+  {
+    id: 2,
+    title: "Managing Processes",
+    points: ["Process Optimization", "Strategic Thinking and Decision-Making"],
+    details: [
+      [
+        "Process mapping: Identifying and eliminating bottlenecks",
+        "Continuous improvement frameworks (Lean basics)",
+        "Metrics that matter: Setting and tracking KPIs for process efficiency",
+      ],
+      [
+        "Structured Decision-Making Models (e.g., SWOT, Cost-Benefit Analysis)",
+        "Prioritization techniques for competing tasks and goals",
+        "Navigating Ambiguity: Making decisions with limited information",
+      ],
+    ],
+  },
+  {
+    id: 3,
+    title: "Managing Performance",
+    points: [
+      "Building a Performance-Driven Culture",
+      "Sustaining Leadership Growth",
+    ],
+    details: [
+      [
+        "Setting clear expectations and aligning team goals with organizational objectives",
+        "Conducting effective performance reviews with feedback that drives results",
+        "Incentivizing and rewarding excellence",
+      ],
+      [
+        "Developing a growth mindset for long-term success",
+        "Building a personal leadership brand",
+        "Networking to broaden influence and opportunity",
+      ],
+    ],
+  },
+];
+
+export const gain = [
+  {
+    title: "Enhanced<br/> Leadership Impact",
+    description:
+      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+  },
+  {
+    title: "Optimized<br/> Operational Processes",
+    description:
+      "Master techniques for streamlining workflows, eliminating inefficiencies, and ensuring smooth day-to-day operations",
+  },
+  {
+    title: "Strategic<br/> Decision-Making",
+    description:
+      "Gain tools to analyse complex scenarios and make data-driven decisions that drive organizational success",
+  },
+  {
+    title: "Performance-Driven<br/> Culture",
+    description:
+      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+  },
+  {
+    title: "Effective<br/> Communication and <br/>Influence",
+    description:
+      "Build advanced communication skills to articulate vision, provide constructive feedback, and manage stakeholder expectations",
+  },
+  {
+    title: "Conflict Resolution and <br/> Team Cohesion",
+    description:
+      "Acquire strategies to navigate workplace challenges, resolve conflicts, and enhance collaboration within teams",
+  },
+  {
+    title: "Enhanced<br/> Leadership Impact",
+    description:
+      "Acquire strategies to navigate workplace challenges, resolve conflicts, and enhance collaboration within teams",
+  },
+  {
+    title: "Sustainable Leadership<br/> Growth",
+    description:
+      "Cultivate a 360-degree leadership mindset to navigate challenges, stand for change, and prepare for senior roles",
+  },
+  {
+    title: "Enhanced<br/> Leadership Impact",
+    description:
+      "Acquire strategies to navigate workplace challenges, resolve conflicts, and enhance collaboration within teams",
+  },
+];
