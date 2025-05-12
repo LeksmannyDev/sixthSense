@@ -1,6 +1,5 @@
 import React from "react";
-import { homeAsset } from "../Sections/HomeSection/homeAsset";
-import { servicesAssets } from "../../assets/servicesAsset";
+import { assets } from "../../assets/asset";
 
 const ServicesHomeDesign = ({ title }) => {
   return (
@@ -8,7 +7,7 @@ const ServicesHomeDesign = ({ title }) => {
       <div
         role="img"
         className="min-h-[60vh] sm:min-h-[60vh] md:min-h-[70vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-center"
-        style={{ backgroundImage: `url(${servicesAssets.background})` }}
+        style={{ backgroundImage: `url(${assets.background})` }}
       >
         <div className="absolute inset-0 bg-[#000000CC] flex items-center justify-center">
           <div className="max-w-7xl mx-auto text-center px-2">

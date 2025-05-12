@@ -3,7 +3,7 @@ import { assets } from "../../../assets/asset";
 
 const Banner2 = () => {
   return (
-    <section className="relative w-full h-[400px] sm:h-[500px] overflow-hidden">
+    <section className="relative w-full h-[400px] sm:h-[400px] overflow-hidden">
       <div className="relative w-full h-full overflow-hidden">
         <img
           src={assets.whoBanner2}

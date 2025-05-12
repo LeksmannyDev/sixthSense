@@ -8,7 +8,7 @@ const LmcGraphic = () => {
         <div
           role="img"
           aria-label="Empowering Leaders"
-          className="w-full  lg:ml-7 ml-3 h-[400px] sm:h-[700px] md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[1200px] flex items-center justify-center bg-center"
+          className="w-full  lg:ml-7 ml-3 h-[600px] sm:h-[700px] md:h-[900px] lg:h-[1200px] xl:h-[1400px] 2xl:h-[1500px] flex items-center justify-center bg-center"
           style={{
             backgroundImage: `url(${eventAsset.lmcGraphic})`,
             backgroundSize: "contain",

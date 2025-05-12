@@ -19,7 +19,7 @@ const Mp3Methodology = () => {
         <div
           role="img"
           aria-label="WHAT YOU STAND TO GAIN"
-          className="w-full  h-[400px] sm:h-[700px] md:h-[700px] lg:h-[800px] xl:h-[900px] 2xl:h-[1200px] flex items-center justify-center bg-center"
+          className="w-full  lg:ml-7 ml-3 h-[500px] sm:h-[650px] md:h-[700px] lg:h-[900px] xl:h-[1200px] 2xl:h-[1500px] flex items-center justify-center bg-center"
           style={{
             backgroundImage: `url(${eventAsset.methodology})`,
             backgroundSize: "contain",

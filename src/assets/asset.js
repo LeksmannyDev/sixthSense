@@ -26,8 +26,14 @@ import faculty9 from "../assets/Faculty/9.png";
 import faculty10 from "../assets/Faculty/10.jpg";
 import faculty11 from "../assets/Faculty/11.jpg";
 import faculty12 from "../assets/Faculty/12.jpg";
+import background from "../assets/Services/services.svg";
+import donwloadB from "../assets/Services/downloadB.png";
+import graphic1 from "../assets/Services/Graphic1.svg";
+import graphic2 from "../assets/Services/Graphic2.svg";
 
 export const assets = {
+  background,
+  donwloadB,
   logo,
   contact,
   mail,
@@ -44,6 +50,8 @@ export const assets = {
   graphic,
   home,
   arrow,
+  graphic1,
+  graphic2,
 };
 
 export const coreValues = [
@@ -93,4 +101,37 @@ export const facultyList = [
   { name: "ADERINSOLA JOLAOSHO", image: faculty10 },
   { name: "SOGO SKEREBE", image: faculty11 },
   { name: "DAPO ONAMUSI", image: faculty12 },
+];
+
+export const approaches = [
+  {
+    title: "Assessments & Analyses",
+    text: "Structured assessments to gauge current skill levels and target areas for improvement",
+    color: "bg-[#172a4d]",
+  },
+  {
+    title: "Expert Insights",
+    text: "Facilitator-led sessions by seasoned industry professionals, offering actionable strategies and leadership frameworks.",
+    color: "bg-[#2a4e7e]",
+  },
+  {
+    title: "Case Studies",
+    text: "Real-world scenarios to apply concepts and enhance practical understanding",
+    color: "bg-[#1b4d7e]",
+  },
+  {
+    title: "Brainteasers",
+    text: "Engaging puzzles to stimulate critical thinking and problem-solving abilities",
+    color: "bg-[#4b6a92]",
+  },
+  {
+    title: "Creative Visuals",
+    text: "Visual aids to illustrate complex ideas and support retention of key concepts",
+    color: "bg-[#4e6b8e]",
+  },
+  {
+    title: "Role Play & Team Activities",
+    text: "Interactive exercises to build communication skills and encourage collaborative learning.",
+    color: "bg-[#6a9bc2]",
+  },
 ];

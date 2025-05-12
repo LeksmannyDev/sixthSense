@@ -7,7 +7,7 @@ const ExecutiveBenefits = ({
   benefits = [],
 }) => {
   return (
-    <section className="bg-light md:py-20  px-4 sm:px-8 lg:px-16 text-center">
+    <section className="bg-light md:py-20  py-10 px-4 sm:px-8 lg:px-16 text-center">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-[52px] font-medium text-deepBlue mb-4">
           {title}
