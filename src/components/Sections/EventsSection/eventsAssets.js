@@ -13,6 +13,7 @@ import eventBanner from "../../../assets/Events/eventBanner.jpg";
 import lmcGraphic from "../../../assets/Events/LmcGraphic.png";
 import lmcGraphic2 from "../../../assets/Events/LmcGraphic2.svg";
 import Profile from "../../../assets/Events/principal.svg";
+import methodology from "../../../assets/Events/Infographics.svg";
 
 export const eventAsset = {
   background1,
@@ -28,6 +29,7 @@ export const eventAsset = {
   lmcGraphic,
   lmcGraphic2,
   Profile,
+  methodology,
 };
 
 export const quoteDetails = [

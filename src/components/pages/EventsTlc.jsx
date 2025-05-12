@@ -17,7 +17,7 @@ const EventsTlc = () => {
       <EventsHome />
       <QuoteBanner />
       <LeadershipClass />
-      <GallerySection />
+      <GallerySection title="Images from our last Session" />
       <Countdown />
       <EventBanner1 />
       <Objectives />

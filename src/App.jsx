@@ -11,6 +11,9 @@ import EventsTlc from "./components/pages/EventsTlc";
 import Faculty from "./components/pages/Faculty";
 import Mp3 from "./components/pages/Mp3";
 import Lmc from "./components/pages/Lmc";
+import Leadership from "./components/pages/Leadership";
+import Training from "./components/pages/Training";
+import Retreat from "./components/pages/Retreat";
 
 function App() {
   return (
@@ -104,6 +107,36 @@ function App() {
               <Layout>
                 <PageTransitionWrapper>
                   <Contact />
+                </PageTransitionWrapper>
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/leadership-development"
+            element={
+              <Layout>
+                <PageTransitionWrapper>
+                  <Leadership />
+                </PageTransitionWrapper>
+              </Layout>
+            }
+          />
+          <Route
+            path="/services/executive-training"
+            element={
+              <Layout>
+                <PageTransitionWrapper>
+                  <Training />
+                </PageTransitionWrapper>
+              </Layout>
+            }
+          />{" "}
+          <Route
+            path="/services/executive-retreat"
+            element={
+              <Layout>
+                <PageTransitionWrapper>
+                  <Retreat />
                 </PageTransitionWrapper>
               </Layout>
             }

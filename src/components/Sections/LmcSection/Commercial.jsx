@@ -7,12 +7,12 @@ const Commercial = () => {
         <h2 className="text-blue text-2xl text-center sm:text-3xl md:text-[36px] mb-4 font-medium">
           COMMERCIAL ARRANGEMENT
         </h2>
-        <p className="mb-4 tracking-wider  text-base sm:text-lg">
+        <p className="mb-4 tracking-wide text-base sm:text-xl">
           The investment fee for this premium Coaching Programme is
-          <span className="text-red font-bold"> N5,000,000 only.</span> This
+          <span className="text-red font-bold"> N5,000,000</span> only. This
           covers:
         </p>
-        <ul className="list-disc text-base sm:text-lg tracking-wider list-inside space-y-3">
+        <ul className="list-disc text-base sm:text-xl tracking-wide list-inside space-y-2">
           <li>
             <strong>Programme Design:</strong> Tailored coaching frameworks to
             meet your team’s unique needs

@@ -7,6 +7,9 @@ import Mp3Banner from "../Sections/Mp3Section/Mp3Banner";
 import Mp3Numbers from "../Sections/Mp3Section/Mp3Numbers";
 import CourseContent from "../Sections/Mp3Section/CourseContent";
 import StandToGain from "../Sections/Mp3Section/StandToGain";
+import ModuleOverview from "../Sections/Mp3Section/ModuleOverview";
+import Mp3Methodology from "../Sections/Mp3Section/Mp3Methodology";
+import Mp3Commercial from "../Sections/Mp3Section/Mp3Commercial";
 
 const Mp3 = () => {
   return (
@@ -19,6 +22,9 @@ const Mp3 = () => {
       <Mp3Numbers />
       <CourseContent />
       <StandToGain />
+      <ModuleOverview />
+      <Mp3Methodology />
+      <Mp3Commercial />
     </>
   );
 };

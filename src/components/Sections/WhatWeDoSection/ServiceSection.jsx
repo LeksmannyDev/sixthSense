@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import service1 from "../../../assets/What/service1.jpg";
 import service2 from "../../../assets/What/service2.jpg";
 import viewMore from "../../../assets/What/View More.png";
@@ -9,9 +10,12 @@ const services = [
     title: "Leadership Solutions",
     image: service1,
     items: [
-      { name: "Leadership Development", link: "#" },
-      { name: "Executive Coaching", link: "#" },
-      { name: "Executive Retreat", link: "#" },
+      {
+        name: "Leadership Development",
+        link: "/services/leadership-development",
+      },
+      { name: "Executive Coaching", link: "/services/executive-training" },
+      { name: "Executive Retreat", link: "/services/executive-retreat" },
     ],
   },
   {
@@ -56,8 +60,8 @@ const ServiceSection = () => {
                     </span>
                     <div className="flex flex-row">
                       {item.link && (
-                        <a
-                          href={item.link}
+                        <Link
+                          to={item.link}
                           className="text-blue text-sm underline flex items-center gap-1"
                         >
                           view more
@@ -66,7 +70,7 @@ const ServiceSection = () => {
                             alt="Arrow icon"
                             className="w-4 h-4 inline-block"
                           />
-                        </a>
+                        </Link>
                       )}
                     </div>
                   </li>

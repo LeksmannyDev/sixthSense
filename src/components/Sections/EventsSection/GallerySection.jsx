@@ -21,11 +21,11 @@ const GalleryCard = ({ img, index, tall = false }) => {
     </div>
   );
 };
-const GallerySection = () => {
+const GallerySection = ({ title }) => {
   return (
     <section className="bg-light py-14 px-4 sm:px-8 sm:pb-40 pb-20 lg:px-16">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-center text-blue mb-5 sm:mb-10">
-        Images from our last Session
+      <h2 className="text-2xl sm:text-3xl md:text-4xl mt-0 font-medium text-center text-blue mb-5 sm:mb-10">
+        {title}
       </h2>
 
       {/* (2-column grid) */}
