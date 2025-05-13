@@ -15,7 +15,7 @@ const EventBannerDesign = ({ image, title, text }) => {
       <div className="absolute inset-0 bg-[#000000B2] opacity-100"></div>
 
       {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mx-auto w-full max-w-6xl">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-left text-white px-4 mx-auto w-full max-w-6xl">
         <div className="font-medium text-2xl sm:text-3xl md:text-[40px] text-red transform transition-transform duration-700 hover:scale-105">
           <h2>{title}</h2>
         </div>

@@ -18,7 +18,7 @@ const EventHomeDesign = ({
         className="min-h-[80vh] sm:min-h-[90vh] md:min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-cover bg-center relative"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-[#000000CC]"></div>
+        <div className="absolute inset-0 bg-[#000000CC] opacity-80"></div>
 
         {/* Content */}
         <div className="max-w-4xl w-full text-center z-10 relative px-2">

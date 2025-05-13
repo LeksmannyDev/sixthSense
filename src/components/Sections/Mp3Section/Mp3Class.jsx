@@ -31,14 +31,14 @@ const Mp3Class = () => {
         </p>
 
         {/* Image */}
-        <div className="flex justify-center mt-6 sm:mt-8 md:mt-10 mb-3 sm:mb-5 md:mb-12">
-          <div className="relative w-full transition-all duration-500 ease-in-out max-w-5xl h-[220px] sm:h-[400px] md:h-[500px] lg:h-[550px] overflow-hidden object-cover">
+        <div className="flex justify-center py-5 md:py-8 lg:py-10">
+          <div className="relative w-full h-full overflow-hidden object-cover">
             <img
-              src={eventAsset.news}
+              src={eventAsset.mp3Class}
               alt="Leadership Discussion"
               className=""
             />
-            <div className="absolute inset-0 bg-black opacity-70"></div>
+            <div className="absolute inset-0 bg-black opacity-30"></div>
           </div>
         </div>
 
