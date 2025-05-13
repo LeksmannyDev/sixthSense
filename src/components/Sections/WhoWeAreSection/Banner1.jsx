@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Banner1 = () => {
   return (
-    <section className="relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[550px]">
+    <section className="relative w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
       {/* Background Image */}
       <div className="flex justify-center items-center w-full h-full">
         <div className="relative w-full h-full overflow-hidden">

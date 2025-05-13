@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BackgroundDesign from "../../shared/BackgroundDesign";
+import { assets } from "../../../assets/asset";
 
 const Hero = () => {
   const homeContent = {
@@ -15,9 +16,11 @@ const Hero = () => {
     cta1: "schedule a free call",
   };
 
+  const initialBg = assets.homeBg;
+
   return (
     <div className="w-full overflow-hidden font-metropolis">
-      <BackgroundDesign>
+      <BackgroundDesign initialBackground={initialBg}>
         <div className="max-w-5xl text-center z-10 relative px-2">
           <h1 className="text-3xl sm:text-5xl md:text-6xl uppercase mb-4 font-medium flex flex-wrap justify-center">
             {homeContent.title.map((part, i) => (

@@ -1,8 +1,8 @@
 import logo from "./elements/Logo.png";
 import contact from "./elements/contact.png";
 import mail from "./elements/mail.png";
-import mission from "../assets/Who/mission.jpg";
-import vision from "../assets/Who/vision.jpg";
+import mission from "../assets/Who/mission.png";
+import vision from "../assets/Who/vision.png";
 import whoBanner from "../assets/Who/whoBanner.jpg";
 import people from "../assets/Who/people.png";
 import sustainability from "../assets/Who/sustainability.png";
@@ -30,9 +30,17 @@ import background from "../assets/Services/services.svg";
 import donwloadB from "../assets/Services/downloadB.png";
 import graphic1 from "../assets/Services/Graphic1.svg";
 import graphic2 from "../assets/Services/Graphic2.svg";
+import homeBg from "../assets/Home/HomeBg.svg";
+import whoBg from "../assets/Home/WhoBg.svg";
+import whatBg from "../assets/Home/WhatBg.svg";
+import facultBg from "../assets/Home/FacultyBg.svg";
+import contactBg from "../assets/Home/ContactBg.svg";
+import blogBg from "../assets/Home/StoriesBg.svg";
+import aboutBanner from "../assets/Who/homeBanner.jpg";
 
 export const assets = {
   background,
+  aboutBanner,
   donwloadB,
   logo,
   contact,
@@ -52,6 +60,12 @@ export const assets = {
   arrow,
   graphic1,
   graphic2,
+  homeBg,
+  whoBg,
+  whatBg,
+  facultBg,
+  contactBg,
+  blogBg,
 };
 
 export const coreValues = [

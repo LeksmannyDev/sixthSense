@@ -1,5 +1,5 @@
 import React from "react";
-import { homeAsset } from "../HomeSection/homeAsset";
+import { assets } from "../../../assets/asset";
 
 const AboutSection = () => {
   return (
@@ -24,7 +24,7 @@ const AboutSection = () => {
         {/* Image Block */}
         <div className="w-full max-w-[600px] mx-auto relative h-[300px] md:h-[360px]">
           <img
-            src={homeAsset.homeBanner1}
+            src={assets.aboutBanner}
             alt="SixthSense Leadership Session"
             className="w-full h-full object-cover rounded-tr-[80px]"
           />
