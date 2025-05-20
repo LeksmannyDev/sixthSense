@@ -12,7 +12,7 @@ const WhoWeAre = () => {
     <>
       <HeroSection />
       <AboutSection />
-      <NumbersSection />
+      {/* <NumbersSection /> */}
       <PurposeSection />
       <Banner1 />
       <ValueSection />

@@ -3,7 +3,7 @@ import { assets } from "../../../assets/asset";
 
 const Graphic = () => {
   return (
-    <section className="w-full overflow-hidden bg-light px-4 py-1 md:py-10 lg:py-20 xl:py-30">
+    <section className="w-full overflow-hidden bg-light px-4 sm:px-6 md:px-10 py-1 md:py-10 lg:py-20 xl:py-30">
       <div
         role="img"
         aria-label="Empowering Leaders"

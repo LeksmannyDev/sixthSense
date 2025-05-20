@@ -4,7 +4,7 @@ import SectionHeader from "../../shared/SectionHeader";
 
 const ValueSection = () => {
   return (
-    <section className="py-12 sm:py-14 md:py-16 bg-light px-4 sm:px-6 lg:px-12 xl:px-20">
+    <section className="py-12 sm:py-14 md:py-16 bg-light px-4 sm:px-6 md:px-10">
       <div className="max-w-5xl mx-auto">
         <SectionHeader subtitle="our values" title="What we Stand for." />
 

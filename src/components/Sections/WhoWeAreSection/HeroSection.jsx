@@ -6,8 +6,8 @@ const HeroSection = () => {
   const initialBg = assets.whoBg;
   return (
     <div className="w-full overflow-hidden font-metropolis">
-      <BackgroundDesign initialBackground={initialBg}>
-        <div className="max-w-5xl text-center z-10 relative px-2">
+      <BackgroundDesign initialBackground={initialBg} mode="static">
+        <div className="max-w-5xl text-center ">
           <h1 className="text-3xl sm:text-5xl md:text-6xl uppercase mb-4 text-white font-medium flex flex-wrap justify-center">
             who we are
           </h1>

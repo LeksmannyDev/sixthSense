@@ -22,7 +22,7 @@ const TestimonialSection = () => {
     (currentIndex + offset + testimonials.length) % testimonials.length;
 
   return (
-    <section className="py-25 px-4 sm:px-6 lg:px-8 bg-light relative overflow-hidden">
+    <section className="py-25  px-4 sm:px-6 md:px-10  bg-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex text-center lg:text-left flex-col max-w-6xl mx-auto lg:flex-row justify-between gap-10 items-start mb-1 sm:mb-20">

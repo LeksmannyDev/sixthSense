@@ -17,6 +17,8 @@ import methodology from "../../../assets/Events/Infographics.svg";
 import tlcClass from "../../../assets/Events/Tlmclass.png";
 import lmcClass from "../../../assets/Events/lmcClass.png";
 import mp3Class from "../../../assets/Events/mp3Class.png";
+import mp3Banner from "../../../assets/Events/mp3Banner.jpg";
+import lmcBanner from "../../../assets/Events/lmcBanner.png";
 
 export const eventAsset = {
   background1,
@@ -36,6 +38,8 @@ export const eventAsset = {
   tlcClass,
   lmcClass,
   mp3Class,
+  mp3Banner,
+  lmcBanner,
 };
 
 export const quoteDetails = [

@@ -1,37 +1,37 @@
-import logo from "./elements/Logo.png";
-import contact from "./elements/contact.png";
+import logo from "./elements/sixthlogo.svg";
 import mail from "./elements/mail.png";
 import mission from "../assets/Who/mission.png";
 import vision from "../assets/Who/vision.png";
-import whoBanner from "../assets/Who/whoBanner.jpg";
+import whoBanner from "../assets/Who/whoBanner.png";
 import people from "../assets/Who/people.png";
 import sustainability from "../assets/Who/sustainability.png";
 import excellence from "../assets/Who/excellence.png";
 import innovation from "../assets/Who/innovation.png";
 import integrity from "../assets/Who/integrity.png";
 import whoBanner2 from "../assets/Who/whoBanner2.jpg";
+import whoBanner3 from "../assets/Who/whoBanner3.png";
 import download from "../assets/Who/download.png";
 import graphic from "../assets/Home/Graphic.png";
 import home from "../assets/Home/home.jpg";
 import arrow from "../assets/Home/arrow.png";
-import faculty1 from "../assets/Faculty/1.png";
-import faculty2 from "../assets/Faculty/2.jpg";
-import faculty3 from "../assets/Faculty/3.jpg";
-import faculty4 from "../assets/Faculty/4.png";
-import faculty5 from "../assets/Faculty/5.jpg";
-import faculty6 from "../assets/Faculty/6.jpg";
-import faculty7 from "../assets/Faculty/7.jpg";
-import faculty8 from "../assets/Faculty/8.jpg";
-import faculty9 from "../assets/Faculty/9.png";
-import faculty10 from "../assets/Faculty/10.jpg";
-import faculty11 from "../assets/Faculty/11.jpg";
-import faculty12 from "../assets/Faculty/12.jpg";
+import faculty1 from "../assets/Faculty/1.svg";
+import faculty2 from "../assets/Faculty/2.svg";
+import faculty3 from "../assets/Faculty/3.svg";
+import faculty4 from "../assets/Faculty/4.svg";
+import faculty5 from "../assets/Faculty/5.svg";
+import faculty6 from "../assets/Faculty/6.svg";
+import faculty7 from "../assets/Faculty/7.svg";
+import faculty8 from "../assets/Faculty/8.svg";
+import faculty9 from "../assets/Faculty/9.svg";
+import faculty10 from "../assets/Faculty/10.svg";
+import faculty11 from "../assets/Faculty/11.svg";
+import faculty12 from "../assets/Faculty/12.svg";
 import background from "../assets/Services/services.svg";
 import donwloadB from "../assets/Services/downloadB.png";
 import graphic1 from "../assets/Services/Graphic1.svg";
 import graphic2 from "../assets/Services/Graphic2.svg";
 import homeBg from "../assets/Home/HomeBg.svg";
-import whoBg from "../assets/Home/WhoBg.svg";
+import whoBg from "../assets/Home/WhoBg.png";
 import whatBg from "../assets/Home/WhatBg.svg";
 import facultBg from "../assets/Home/FacultyBg.svg";
 import contactBg from "../assets/Home/ContactBg.svg";
@@ -43,7 +43,6 @@ export const assets = {
   aboutBanner,
   donwloadB,
   logo,
-  contact,
   mail,
   mission,
   vision,
@@ -66,6 +65,7 @@ export const assets = {
   facultBg,
   contactBg,
   blogBg,
+  whoBanner3,
 };
 
 export const coreValues = [
@@ -103,18 +103,63 @@ export const coreValues = [
 ];
 
 export const facultyList = [
-  { name: "DEMOLA ADERBIGBE", image: faculty1 },
-  { name: "KUNLE AKIODE, PhD", image: faculty2 },
-  { name: "EZU UWAMOA", image: faculty3 },
-  { name: "GOSPEL OBELE", image: faculty4 },
-  { name: "LESLIE GEORGE", image: faculty5 },
-  { name: "BRIGHT UWEKENGA MkD, FIMC, CMC", image: faculty6 },
-  { name: "OLAWALE THOMAS", image: faculty7 },
-  { name: "TINUKU OLAOYE", image: faculty8 },
-  { name: "GABRIEL BALOGUN", image: faculty9 },
-  { name: "ADERINSOLA JOLAOSHO", image: faculty10 },
-  { name: "SOGO SKEREBE", image: faculty11 },
-  { name: "DAPO ONAMUSI", image: faculty12 },
+  {
+    name: "BRIGHT UWEKENGA MkD, FIMC, CMC",
+    image: faculty1,
+    linkedin: "https://www.linkedin.com/in/brightuk/",
+  },
+  {
+    name: "DEMOLA ADERBIGBE",
+    image: faculty2,
+    linkedin: "https://www.linkedin.com/in/demola-aderibigbe-26484447//",
+  },
+  {
+    name: "KUNLE AKIODE, PhD",
+    image: faculty3,
+    linkedin: "https://www.linkedin.com/in/kunleakiode/",
+  },
+  {
+    name: "EZU UWAMOA",
+    image: faculty4,
+    linkedin: "https://www.linkedin.com/in/eizu/",
+  },
+  {
+    name: "GOSPEL OBELE",
+    image: faculty5,
+    linkedin: "https://www.linkedin.com/in/dr-gospel-obele-50b51252/",
+  },
+  {
+    name: "LESLIE GEORGE",
+    image: faculty6,
+    linkedin: "https://www.linkedin.com/in/leslie-george-94581422/",
+  },
+  { name: "OLAWALE THOMAS", image: faculty7, linkedin: "" },
+  {
+    name: "TINUKU OLAOYE",
+    image: faculty8,
+    linkedin: "https://www.linkedin.com/in/tinukemiolaoye/",
+  },
+  {
+    name: "GABRIEL BALOGUN",
+    image: faculty9,
+    linkedin: "https://www.linkedin.com/in/gabrielbalogun/",
+  },
+  {
+    name: "ADERINSOLA JOLAOSHO",
+    image: faculty10,
+    linkedin: "https://www.linkedin.com/in/aderinsola-jolaosho/",
+  },
+  {
+    name: "SOGO SKEREBE",
+    image: faculty11,
+    linkedin:
+      "https://www.linkedin.com/in/akerele-oluwasogo-glmp-mr-excel-11066710b/",
+  },
+  {
+    name: "DAPO ONAMUSI",
+    image: faculty12,
+    linkedin: "https://www.linkedin.com/in/dapo-onamusi",
+  },
 ];
 
 export const approaches = [

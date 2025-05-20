@@ -17,10 +17,9 @@ const Home = () => {
       <Banner1 />
       <HomeService />
       <Brands />
-      <Banner2 />
       <WhyChooseUs />
       <TestimonialSection />
-      <HomeBanner2 />
+      <Banner2 />
     </>
   );
 };

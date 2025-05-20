@@ -53,7 +53,7 @@ const Header = () => {
     >
       <nav className="max-w-8xl mx-auto flex items-center justify-between h-full px-4 sm:px-6 md:px-8">
         <div className="flex items-center mr-30 h-full">
-          <img src={assets.logo} alt="Logo" className="h-12 w-auto" />
+          <img src={assets.logo} alt="Logo" className="h-10 w-auto" />
         </div>
 
         {/* Desktop Navigation */}

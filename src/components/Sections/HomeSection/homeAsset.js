@@ -1,5 +1,4 @@
-import Hero from "../../../assets/Home/HomeHero.jpg";
-import homeBanner1 from "../../../assets/Home/homeBanner.jpg";
+import homeBanner1 from "../../../assets/Home/homeBanner.png";
 import service1 from "../../../assets/What/service1.jpg";
 import service2 from "../../../assets/What/service2.jpg";
 import change from "../../../assets/Home/change.png";
@@ -15,11 +14,12 @@ import unparalled from "../../../assets/Home/uparllel.png";
 import zylus from "../../../assets/What/zylus.png";
 import roland from "../../../assets/Home/roland.png";
 import finglow from "../../../assets/Home/finglow.png";
+import banner1 from "../../../assets/Home/Banner1.png";
 
 export const homeAsset = {
-  Hero,
   homeBanner1,
   choose,
+  banner1,
 };
 
 export const services = [

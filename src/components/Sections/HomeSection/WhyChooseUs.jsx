@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
       </div>
 
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 mx-auto max-w-5xl h-full">
+      <div className="relative z-10 flex flex-col items-center px-4 sm:px-6 md:px-10 justify-center text-center text-white  mx-auto max-w-5xl h-full">
         <p className="text-red text-lg sm:text-xl md:text-2xl font-semibold uppercase">
           OUR EDGE
         </p>
@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-[27px]  font-bold mb-2">
                 {feature.title}
               </h3>
               <p className="text-sm sm:text-base max-w-[270px]">

@@ -1,6 +1,8 @@
-// import { assets } from "../../assets/assets";
-
 import { assets } from "../../assets/asset";
+import facebook from "../../assets/elements/facebook.svg";
+import twitter from "../../assets/elements/twitter.svg";
+import pinterest from "../../assets/elements/pinterest.svg";
+import youtube from "../../assets/elements/youtube.svg";
 
 const Footer = () => {
   return (
@@ -29,38 +31,93 @@ const Footer = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="w-full bg-[#333333] mx-auto px-6 sm:px-10 lg:px-20 py-10 md:py-20 text-center">
-        {/* Heading */}
-        <h4 className="font-bold text-2xl sm:text-3xl text-red md:text-4xl uppercase mb-2">
-          Our Contact
-        </h4>
-        <h2 className="text-3xl sm:text-5xl md:text-6xl mt-4 font-medium mb-8">
-          How to Reach Us
-        </h2>
-
-        {/* Contact Section */}
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 sm:gap-12 lg:gap-20 xl:gap-[250px] mb-10 md:mb-20">
-          {/* Left - Contact Details */}
-          <div className="text-sm sm:text-base text-[#E0F7FA] space-y-4 sm:space-y-5 text-left max-w-md">
-            <p>Brownstone Estate, Lekki, Lagos</p>
-            <p>+234 708 040 1080</p>
-            <p>www.sixthsenseleadership.com</p>
-            <p>sixthsenseleadership@gmail.com</p>
+      <div className="w-full bg-[#333333]   py-10 md:py-16 lg:py-25 text-white">
+        <div className="max-w-7xl mx-auto px-10 xl:px-1 flex flex-col md:flex-row items-start gap-10  xl:gap-x-40">
+          <div className="flex-shrink-0 w-full md:w-auto">
+            <img
+              src={assets.logo}
+              alt="Logo"
+              className="h-16 sm:h-20 w-auto object-contain mx-auto md:mx-0"
+            />
           </div>
 
-          {/* Right - Image */}
-          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80">
-            {/* Border box behind the image */}
-            <div className="absolute inset-0 mt-3 border-b-10 border-r-10 border-[#1F3864] rounded-3xl sm:rounded-[50px] md:rounded-[60px] z-0" />
+          <div className="w-full">
+            <h3 className="text-[#6A9BC2] mb-4 md:mb-6 text-xl sm:text-2xl">
+              Quick Links
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-sm  text-[#E0F7FA]">
+              <ul className="space-y-3 sm:space-y-4">
+                <li>
+                  <a href="#">Who We Are</a>
+                </li>
+                <li>
+                  <a href="#">Transformational Leadership Masterclass</a>
+                </li>
+                <li>
+                  <a href="#">Leadership Mastery Circle</a>
+                </li>
+                <li>
+                  <a href="#">MP3 Masterclass</a>
+                </li>
+              </ul>
 
-            {/* Image slightly shifted to reveal bottom/right borders */}
-            <div className="absolute top-0 left-0 w-[98%] h-[98%] rounded-3xl sm:rounded-[50px] md:rounded-[60px] overflow-hidden z-10">
-              <img
-                src={assets.contact}
-                alt="Contact"
-                className="w-full h-full object-cover"
-              />
+              <ul className="space-y-3 sm:space-y-4">
+                <li>
+                  <a href="#">Our Faculty</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+
+              <div className="space-y-3 sm:space-y-4 mt-4 sm:mt-0">
+                <p>Brownstone Estate, Lekki, Lagos</p>
+                <p>+234 708 040 1080</p>
+                <p>www.sixthsenseleadership.com</p>
+                <p>sixthsenseleadership@gmail.com</p>
+              </div>
             </div>
+          </div>
+        </div>
+        {/* Copyright */}
+        <div className="max-w-7xl px-4 sm:px-6 md:px-10 mx-auto mt-20 md:mt-40 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-white">
+          <p className="text-center md:text-left uppercase mb-4 md:mb-0">
+            Copyright &copy; 2024 SIXTHSENSE LEADERSHIP. ALL RIGHTS RESERVED.
+          </p>
+
+          {/* Social Icon Images */}
+          <div className="flex space-x-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebook} alt="Facebook" className="h-5 w-auto" />
+            </a>
+            <a
+              href="https://pinterest.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={pinterest} alt="Pinterest" className="h-5 w-auto" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={twitter} alt="Twitter" className="h-5 w-auto" />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={youtube} alt="YouTube" className="h-5 w-auto" />
+            </a>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { services } from "./homeAsset";
 
 const HomeService = () => {
   return (
-    <section className="bg-blue py-16 px-4 xl:h-250 h-full sm:px-6 md:px-20">
+    <section className="bg-blue py-16 xl:h-250 h-full px-4 sm:px-6 md:px-10">
       <SectionHeader subtitle="Our Services" title="What We Do" />
 
       <div className="flex flex-wrap justify-center gap-6 sm:gap-x-1 md:gap-x-5 lg:gap-x-4 gap-y-5">

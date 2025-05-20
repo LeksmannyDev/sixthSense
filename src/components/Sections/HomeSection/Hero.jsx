@@ -20,9 +20,9 @@ const Hero = () => {
 
   return (
     <div className="w-full overflow-hidden font-metropolis">
-      <BackgroundDesign initialBackground={initialBg}>
-        <div className="max-w-5xl text-center z-10 relative px-2">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl uppercase mb-4 font-medium flex flex-wrap justify-center">
+      <BackgroundDesign initialBackground={initialBg} mode="animated">
+        <div className="max-w-5xl text-center z-10 relative px-4 sm:px-6 md:px-10">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl uppercase mb-4 font-medium flex flex-wrap justify-center">
             {homeContent.title.map((part, i) => (
               <span
                 key={i}
@@ -35,7 +35,7 @@ const Hero = () => {
             ))}
           </h1>
 
-          <p className="text-[14px] sm:text-[18px] md:text-[24px] mt-3 max-w-4xl mx-auto text-light">
+          <p className="text-base sm:text-[18px] md:text-[21px] mt-3 max-w-4xl mx-auto text-light">
             {homeContent.description}
           </p>
 

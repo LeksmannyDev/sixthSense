@@ -2,16 +2,20 @@ import React from "react";
 
 const WhatBanner = () => {
   return (
-    <section className="relative w-full h-[300px] sm:h-[250px] md:h-[300px] bg-[#ffffff] mt-1 sm:mt-8 mb-10 sm:mb-10 overflow-hidden">
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-1 sm:px-6 mx-auto w-full max-w-7xl">
-        <h2 className="text-xl sm:text-2xl md:text-3xl text-gray capitalize ">
-          At SixthSense Leadership, we understand that the future of every
-          organization starts with its leaders; hence, we empower leaders to
-          transform organizations and drive sustainable growth through
-          innovative interventions.
-        </h2>
+    <div className="w-full px-4 sm:px-6 md:px-10 py-8 md:py-20 bg-light">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-center items-start md:items-center">
+        <div className="hidden md:block h-[200px] border-l-4 border-[#FF0C10] mr-6"></div>
+
+        <div className="text-gray text-lg sm:text-xl md:text-2xl">
+          <p className="capitalize">
+            At SixthSense Leadership, we understand that the future of every
+            organization starts with its leaders; hence, we empower leaders to
+            transform organizations and drive sustainable growth through
+            innovative interventions.
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

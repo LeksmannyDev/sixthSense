@@ -20,7 +20,7 @@ const Banner2 = () => {
       <div className="absolute inset-0 bg-black opacity-85"></div>
 
       {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mx-auto w-full max-w-7xl">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 md:px-10 mx-auto w-full max-w-7xl">
         <div className="font-medium text-2xl sm:text-3xl md:text-5xl transform transition-transform duration-700 hover:scale-105">
           <h2>Download our Brochure</h2>
         </div>
@@ -32,14 +32,19 @@ const Banner2 = () => {
         </p>
 
         <div className="flex flex-row">
-          <button className="border-2 border-[#ff0c10] text-center uppercase text-xs sm:text-sm md:text-base text-blackish font-medium cursor-pointer px-5 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full transition-all duration-300 bg-transparent flex items-center gap-2">
+          <a
+            href="https://drive.google.com/file/d/15rc4gzTn08_K4q_pY0c5VPDowrQujf7f/view?usp=sharing"
+            target="_blank"
+            download="SixthSense-Leadership-Brochure.pdf"
+            className="border-2 border-[#ff0c10] text-center uppercase text-xs sm:text-sm  text-blackish font-medium cursor-pointer px-5 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full transition-all duration-300 bg-transparent flex items-center gap-2"
+          >
             Download Brochure
             <img
               src={assets.download}
               alt="Download icon"
               className="w-4 h-4"
             />
-          </button>
+          </a>
         </div>
       </div>
     </section>

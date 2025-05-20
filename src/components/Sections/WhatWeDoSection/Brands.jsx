@@ -17,9 +17,9 @@ const Brands = () => {
   ];
 
   return (
-    <div className="bg-white py-15 pb-20 px-4 text-center">
-      <h2 className="text-2xl md:text-[40px] font-medium text-blue mb-10 sm:mb-5">
-        Brands we have Touched
+    <div className="bg-white py-15 pb-20 px-4 sm:px-6 md:px-10 text-center">
+      <h2 className="text-2xl md:text-[45px] font-medium text-blue mb-10 sm:mb-2">
+        Brands our Faculty has Trained
       </h2>
       <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row gap-4 md:gap-2">
         {images.map((item, index) => (

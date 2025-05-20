@@ -7,12 +7,12 @@ const EventBannerDesign = ({ image, title, text }) => {
         <img
           src={image}
           alt="banner"
-          className="w-full h-[650px] object-cover"
+          className="w-full h-[950px] object-cover"
         />
       </div>
 
       {/* Dark overlay with subtle transition */}
-      <div className="absolute inset-0 bg-[#000000B2] opacity-100"></div>
+      <div className="absolute inset-0 bg-[#000000B2] "></div>
 
       {/* Text Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-left text-white px-4 mx-auto w-full max-w-6xl">

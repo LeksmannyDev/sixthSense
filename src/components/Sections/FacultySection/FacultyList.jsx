@@ -34,14 +34,14 @@ const FacultyList = () => {
             expert-led discussions, real-world simulations, case studies, and
             hands-on activities. By drawing on their career experiences and
             current best practices, they ensure participants gain actionable
-            insights and the confidence to excel in their roles. 
+            insights and the confidence to excel in their roles.
             <br />
             <br />
             With a steadfast commitment to continuous learning, our faculty
             regularly updates content to reflect the latest trends,
             technologies, and methodologies. This ensures our training programs
             remain relevant, forward-thinking, and aligned with the evolving
-            demands of today's business environment.  
+            demands of today's business environment.
             <br />
             <br /> Our faculty's passion for teaching, commitment to excellence,
             and diverse expertise make them invaluable to our training
@@ -50,23 +50,26 @@ const FacultyList = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 gap-y-10 sm:gap-y-16">
+        <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 sm:gap-6 gap-y-10 sm:gap-y-16">
           {facultyList.map((member, index) => (
-            <div
+            <a
               key={index}
-              className="flex flex-col items-center w-full mx-auto text-center"
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center w-full mx-auto text-center "
             >
-              <div className="w-full h-90  lg:h-80">
+              <div className="w-full">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full rounded-[40px] object-cover border-[3px] border-[#003366] mb-3 sm:mb-5"
+                  className="w-full h-full"
                 />
               </div>
-              <p className="mt-4 sm:mt-6 text-xs xs:text-sm sm:text-base md:text-[19px] text-deepBlue font-medium">
+              <p className="mt-4 sm:mt-6 text-sm md:text-base lg:text-[19px] text-deepBlue font-light">
                 {member.name}
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
