@@ -10,6 +10,7 @@ import StandToGain from "../Sections/Mp3Section/StandToGain";
 import ModuleOverview from "../Sections/Mp3Section/ModuleOverview";
 import Mp3Methodology from "../Sections/Mp3Section/Mp3Methodology";
 import Mp3Commercial from "../Sections/Mp3Section/Mp3Commercial";
+import Mp3NextSteps from "../Sections/Mp3Section/Mp3NextSteps";
 
 const Mp3 = () => {
   return (
@@ -19,12 +20,13 @@ const Mp3 = () => {
       <Mp3Class />
       <QuoteMp32 />
       <Mp3Banner />
-      <Mp3Numbers />
-      <CourseContent />
+      {/* <Mp3Numbers /> */}
+      {/* <CourseContent /> */}
       <StandToGain />
-      <ModuleOverview />
-      <Mp3Methodology />
-      <Mp3Commercial />
+      {/* <ModuleOverview /> */}
+      {/* <Mp3Methodology /> */}
+      {/* <Mp3Commercial /> */}
+      <Mp3NextSteps />
     </>
   );
 };

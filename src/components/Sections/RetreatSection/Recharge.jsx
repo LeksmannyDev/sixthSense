@@ -9,13 +9,12 @@ const Recharge = () => {
           Recharge, Reflect & Lead with Clarity
         </h2>
 
-        <p className="text-gray text-sm sm:text-base md:text-[20px] leading-relaxed">
+        <p className="text-gray text-sm sm:text-base md:text-[22px] leading-relaxed">
           Escape the routine, gain fresh perspectives, and strengthen your
           leadership in an exclusive executive retreat designed for high-impact
           professionals.
         </p>
       </div>
-      <GallerySection title="Images from our last Session" />
     </section>
   );
 };

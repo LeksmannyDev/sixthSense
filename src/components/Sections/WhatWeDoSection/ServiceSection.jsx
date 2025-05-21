@@ -31,75 +31,57 @@ const services = [
 
 const ServiceSection = () => {
   return (
-    <section className="bg-blue py-16 px-4 sm:px-6 md:px-10">
+    <section className="bg-blue py-16 px-4 sm:px-6 md:px-20">
       <SectionHeader subtitle="Our Services" title="What We Do" />
 
-      <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-x-6 md:gap-x-8  gap-y-10">
-        {services.map((service, index) => {
-          const hasLink = service.items.some((item) => item.link);
-          const wrapperProps = {
-            className:
-              "bg-white rounded-4xl shadow-md overflow-hidden border-b-[10px] border-[#003366] w-full max-w-[520px] transition hover:scale-[1.01]",
-          };
+      <div className="flex flex-wrap justify-center gap-6  lg:gap-x-4 gap-y-10">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-4xl shadow-md overflow-hidden border-b-[10px] border-[#003366] w-full max-w-[520px]"
+          >
+            <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-66 sm:h-80 object-cover rounded-4xl"
+            />
+            <div className="px-4 sm:px-6 md:px-7 py-7 sm:py-9">
+              <h3 className="text-2xl sm:text-4xl font-semibold text-deepBlue mb-4 max-w-full sm:max-w-[50%]">
+                {service.title}
+              </h3>
+              <ul className="space-y-5">
+                {service.items.map((item, idx) => {
+                  const ItemWrapper = item.link ? Link : "div";
+                  const wrapperProps = item.link ? { to: item.link } : {};
 
-          const cardContent = (
-            <>
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-56 sm:h-64 object-cover rounded-4xl"
-              />
-              <div className="px-4 sm:px-6 md:px-7 py-7 sm:py-9">
-                <h3 className="text-2xl sm:text-3xl font-bold text-deepBlue mb-4 max-w-full sm:max-w-[50%]">
-                  {service.title}
-                </h3>
-                <ul className="space-y-3">
-                  {service.items.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-center justify-between border border-[#1F3864] px-4 sm:px-6 md:px-7 py-3 sm:py-4 rounded-[15px] hover:bg-blue-50 transition"
-                    >
-                      <span className="text-blue text-base sm:text-[20px] font-medium">
-                        {item.name}
-                      </span>
-                      <div className="flex flex-row">
+                  return (
+                    <li key={idx}>
+                      <ItemWrapper
+                        {...wrapperProps}
+                        className="flex items-center justify-between border border-[#1F3864] px-4 sm:px-6 md:px-7 py-3 sm:py-4 rounded-[15px] hover:bg-blue-50 transition cursor-pointer"
+                      >
+                        <span className="text-blue text-base sm:text-[20px] font-medium">
+                          {item.name}
+                        </span>
+
                         {item.link && (
-                          <Link
-                            to={item.link}
-                            className="text-blue text-sm underline flex items-center gap-1"
-                            onClick={(e) => e.stopPropagation()}
-                          >
+                          <span className="text-blue text-sm underline flex items-center gap-1">
                             view more
                             <img
                               src={viewMore}
                               alt="Arrow icon"
                               className="w-4 h-4 inline-block"
                             />
-                          </Link>
+                          </span>
                         )}
-                      </div>
+                      </ItemWrapper>
                     </li>
-                  ))}
-                </ul>
-              </div>
-            </>
-          );
-
-          return hasLink && index === 0 ? (
-            <Link
-              to={service.items[0].link}
-              key={index}
-              {...wrapperProps}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              {cardContent}
-            </Link>
-          ) : (
-            <div key={index} {...wrapperProps}>
-              {cardContent}
+                  );
+                })}
+              </ul>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </section>
   );

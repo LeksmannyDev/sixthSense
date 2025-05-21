@@ -17,7 +17,6 @@ const RetreatBenefits = () => {
         description="Our Executive Retreat is an immersive experience for leaders seeking strategic clarity, personal growth, and deep professional connections. Set in a tranquil environment, this retreat blends expert-led workshops, wellness activities, and networking opportunities."
         benefits={exampleBenefits}
       />
-      <GallerySection title="Images from previous Retreats" />
     </>
   );
 };

@@ -86,13 +86,16 @@ const Header = () => {
                     <ul className="absolute top-full left-0  shadow-lg w-72 text-black opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 invisible z-50 transform -translate-x-4 group-hover:translate-x-0">
                       {[
                         {
-                          name: "Transformational Leadership Masterclass (TLC)",
-                          path: "/events/tlc",
+                          name: "Transformational Leadership Masterclass (TLM)",
+                          path: "/events/transformational-leadership",
                         },
-                        { name: "MP3 Masterclass", path: "/events/mp3" },
+                        {
+                          name: "MP3 Masterclass",
+                          path: "/events/mp3-masterclass",
+                        },
                         {
                           name: "Leadership Mastery Circle",
-                          path: "/events/lmc",
+                          path: "/events/leadership-circle",
                         },
                       ].map((subitem) => (
                         <li key={subitem.path}>

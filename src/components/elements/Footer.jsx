@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { assets } from "../../assets/asset";
 import facebook from "../../assets/elements/facebook.svg";
 import twitter from "../../assets/elements/twitter.svg";
@@ -48,36 +49,75 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-sm  text-[#E0F7FA]">
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="#">Who We Are</a>
+                  <Link to="/who-we-are">Who We Are</Link>
                 </li>
                 <li>
-                  <a href="#">Transformational Leadership Masterclass</a>
+                  <Link to="/events/transformational-leadership">
+                    Transformational Leadership Masterclass
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Leadership Mastery Circle</a>
+                  <Link to="/events/leadership-circle">
+                    Leadership Mastery Circle
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">MP3 Masterclass</a>
+                  <Link to="/events/mp3-masterclass">MP3 Masterclass</Link>
                 </li>
               </ul>
 
               <ul className="space-y-3 sm:space-y-4">
                 <li>
-                  <a href="#">Our Faculty</a>
+                  <Link to="/our-faculty">Our Faculty</Link>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <Link to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to="/contact-us">Contact Us</Link>
                 </li>
               </ul>
 
               <div className="space-y-3 sm:space-y-4 mt-4 sm:mt-0">
-                <p>Brownstone Estate, Lekki, Lagos</p>
-                <p>+234 708 040 1080</p>
-                <p>www.sixthsenseleadership.com</p>
-                <p>sixthsenseleadership@gmail.com</p>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/kavkwqyprNaw1kCDA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:underline"
+                  >
+                    Brownstone Estate, Lekki, Lagos
+                  </a>
+                </p>
+
+                <p>
+                  <a
+                    href="tel:+2347080401080"
+                    className="text-white hover:underline"
+                  >
+                    +234 708 040 1080
+                  </a>
+                </p>
+
+                <p>
+                  <a
+                    href="https://www.sixthsenseleadership.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:underline"
+                  >
+                    www.sixthsenseleadership.com
+                  </a>
+                </p>
+
+                <p>
+                  <a
+                    href="mailto:sixthsenseleadership@gmail.com"
+                    className="text-white hover:underline"
+                  >
+                    sixthsenseleadership@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

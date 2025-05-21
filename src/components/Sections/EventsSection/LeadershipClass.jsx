@@ -3,7 +3,7 @@ import { eventAsset } from "./eventsAssets";
 
 const LeadershipClass = () => {
   return (
-    <section className="bg-light py-20 px-4 sm:px-6 lg:px-24">
+    <section className="bg-light py-25 px-4 sm:px-6 md:px-10">
       <div className="text-gray max-w-5xl text-justify mx-auto">
         {/* Heading */}
         <h1 className="text-3xl md:text-[40px] font-medium text-center text-blue mb-8">
@@ -19,6 +19,7 @@ const LeadershipClass = () => {
           only respond but anticipate and leverage these shifts. The result? A
           critical demand for transformational leaders who can guide their
           organizations through uncertainty and drive meaningful change.
+          <br />
           <br />
           Yet research reveals that nearly 70% of organizations struggle with
           transformation due to ineffective leadership (McKinsey & Co.), and a
@@ -51,6 +52,7 @@ const LeadershipClass = () => {
           real-world case studies, interactive exercises, and thought-provoking
           discussions, participants gain actionable insights and skills that
           directly elevate their leadership impact.
+          <br />
           <br />
           Leaders who go through this program will emerge as resilient,
           visionary leaders, ready to inspire innovation and foster a culture of

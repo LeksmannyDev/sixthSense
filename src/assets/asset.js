@@ -37,6 +37,8 @@ import facultBg from "../assets/Home/FacultyBg.svg";
 import contactBg from "../assets/Home/ContactBg.svg";
 import blogBg from "../assets/Home/StoriesBg.svg";
 import aboutBanner from "../assets/Who/homeBanner.jpg";
+import trainingBackground from "../assets/Services/trainingBackground.svg";
+import retreatBackground from "../assets/Services/retreatBackground.svg";
 
 export const assets = {
   background,
@@ -58,6 +60,7 @@ export const assets = {
   home,
   arrow,
   graphic1,
+  retreatBackground,
   graphic2,
   homeBg,
   whoBg,
@@ -66,6 +69,7 @@ export const assets = {
   contactBg,
   blogBg,
   whoBanner3,
+  trainingBackground,
 };
 
 export const coreValues = [

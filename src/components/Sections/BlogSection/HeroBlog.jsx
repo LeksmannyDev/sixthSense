@@ -10,7 +10,7 @@ const HeroBlog = () => {
       <BackgroundDesign initialBackground={initialBg}>
         <div className="max-w-5xl text-center z-10 relative px-2">
           <h1 className="text-3xl sm:text-5xl md:text-6xl uppercase mb-4 text-white font-medium flex flex-wrap justify-center">
-            our stories
+            our INSIGHTS
           </h1>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <Link

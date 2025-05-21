@@ -6,10 +6,10 @@ const Mp3Masterclass = () => {
   return (
     <section className="bg-light pb-20 pt-0 px-4 sm:px-6 lg:px-24">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-[51px] font-medium lg:text-right text-center text-deepBlue mb-4">
+        <h1 className="text-3xl md:text-[51px] font-medium lg:text-left text-center text-deepBlue mb-4">
           Managing People, Processes and Performances (MP3)
         </h1>
-        <div className="text-right space-y-4 mb-8">
+        <div className="text-left space-y-4 mb-8">
           <p className="text-base sm:text-lg md:text-[22px]">
             The{" "}
             <span className="font-bold text-red">
@@ -39,7 +39,7 @@ const Mp3Masterclass = () => {
             measurable successes.
           </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center lg:justify-end gap-4 sm:gap-6 md:gap-9">
+        <div className="flex flex-wrap items-center  gap-4 sm:gap-6 md:gap-9">
           <Link
             to=""
             className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full font-medium transition duration-300"

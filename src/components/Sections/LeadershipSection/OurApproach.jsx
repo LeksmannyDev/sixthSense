@@ -3,7 +3,7 @@ import { approaches } from "../../../assets/asset";
 
 const OurApproach = () => {
   return (
-    <section className="bg-light py-12 sm:py-16 lg:py-20 pt-0 px-4 sm:px-8 lg:px-16 text-center">
+    <section className="bg-light py-20 md:py-25 px-4 sm:px-6 md:px-10 text-center">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-deepBlue mb-8 sm:mb-12">
         Our Approach
       </h2>

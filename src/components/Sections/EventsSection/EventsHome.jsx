@@ -13,7 +13,7 @@ const EventsHome = () => {
           <br /> Masterclass (TLM)
         </>
       }
-      subtitle="The Transformational Leadership Masterclass"
+      subtitle="Equipping future-ready leaders to drive transformative impact."
       ctaLink="/contact-us"
       ctaText="apply now"
       brochureText="Download Brochure"

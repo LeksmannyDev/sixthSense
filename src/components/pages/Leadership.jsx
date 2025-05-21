@@ -13,14 +13,14 @@ const Leadership = () => {
     <>
       <HomeSection />
       <Masterclass />
-      <GallerySection title="Images from our last Session" />
-      <Mp3Masterclass />
-      <GallerySection title="Images from our last Session" />
+      {/* <GallerySection title="Images from our last Session" /> */}
+      {/* <Mp3Masterclass /> */}
+      {/* <GallerySection title="Images from our last Session" /> */}
       <Executive />
       <OurApproach />
-      <GallerySection title="Images from last our Session" />
+      {/* <GallerySection title="Images from last our Session" /> */}
       <Banner2 />
-      <Graphic2 />
+      {/* <Graphic2 /> */}
     </>
   );
 };

@@ -7,13 +7,13 @@ import WhoWeAre from "./components/pages/WhoWeAre";
 import Contact from "./components/pages/Contact";
 import WhatWeDo from "./components/pages/WhatWeDo";
 import Blogs from "./components/pages/Blogs";
-import EventsTlc from "./components/pages/EventsTlc";
 import Faculty from "./components/pages/Faculty";
 import Mp3 from "./components/pages/Mp3";
 import Lmc from "./components/pages/Lmc";
 import Leadership from "./components/pages/Leadership";
 import Training from "./components/pages/Training";
 import Retreat from "./components/pages/Retreat";
+import EventsTlm from "./components/pages/EventsTlm";
 
 function App() {
   return (
@@ -72,17 +72,17 @@ function App() {
             }
           />
           <Route
-            path="/events/tlc"
+            path="/events/transformational-leadership"
             element={
               <Layout>
                 <PageTransitionWrapper>
-                  <EventsTlc />
+                  <EventsTlm />
                 </PageTransitionWrapper>
               </Layout>
             }
           />
           <Route
-            path="/events/mp3"
+            path="/events/mp3-masterclass"
             element={
               <Layout>
                 <PageTransitionWrapper>
@@ -92,7 +92,7 @@ function App() {
             }
           />
           <Route
-            path="/events/lmc"
+            path="/events/leadership-circle"
             element={
               <Layout>
                 <PageTransitionWrapper>

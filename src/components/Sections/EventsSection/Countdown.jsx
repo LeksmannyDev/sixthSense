@@ -62,7 +62,7 @@ const Countdown = () => {
   ];
 
   return (
-    <div className=" py-15 px-4 pt-0 bg-light text-center">
+    <div className=" py-20 px-4 sm:px-6 md:px-10 bg-light text-center">
       <h2 className="text-2xl md:text-[40px] font-medium text-blue mb-10">
         Countdown till next Session
       </h2>

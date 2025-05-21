@@ -24,7 +24,7 @@ const ExecutiveBenefits = ({
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="border border-[#1F3864] rounded-[12px] font-medium px-5 py-3 sm:px-6 sm:py-4 text-blue text-base md:text-lg"
+              className="border border-[#1F3864] rounded-[12px] font-medium px-5 py-3 sm:px-6 sm:py-4 text-deepBlue text-base md:text-xl"
             >
               {benefit}
             </div>

@@ -18,7 +18,6 @@ const TrainingBenefits = () => {
         description="Our Executive Training Program is tailored for high-achieving professionals who want to accelerate their leadership skills and business expertise. This program provides hands-on learning experiences, real-world case studies, and mentorship from top industry leaders."
         benefits={exampleBenefits}
       />
-      <GallerySection title="Images from our last Training" />
     </>
   );
 };
