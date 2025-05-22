@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BackgroundDesign from "../../shared/BackgroundDesign";
 import { assets } from "../../../assets/asset";
-
 const Hero = () => {
   const homeContent = {
     title: [
@@ -40,9 +39,14 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 flex flex-wrap justify-center gap-3 sm:gap-4">
-            <Link className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300">
+            <a
+              href="https://leks.zohobookings.com/#/leks"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300"
+            >
               {homeContent.cta1}
-            </Link>
+            </a>
           </div>
         </div>
       </BackgroundDesign>

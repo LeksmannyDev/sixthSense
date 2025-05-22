@@ -8,7 +8,7 @@ const StandToGain = () => {
         <h2 className="text-2xl sm:text-3xl md:text-[40px] text-center font-medium text-blue mb-10">
           WHAT PARTICIPANTS STAND TO GAIN
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 lg:gap-y-8 gap-y-6">
           {gain.map((service, index) => (
             <div
               key={index}
@@ -16,7 +16,7 @@ const StandToGain = () => {
             >
               <div className="p-2 flex flex-col h-full mx-auto justify-center gap-y-2 items-center text-center">
                 <h2
-                  className="text-blue text-[16px] px-4 text-center sm:text-[16px] md:text-[22px] font-semibold"
+                  className="text-blue text-[16px] px-4 text-center sm:text-[16px] md:text-[24px] font-semibold"
                   dangerouslySetInnerHTML={{ __html: service.title }}
                 />
                 <p className="text-gray text-[14px] sm:text-[14px] md:text-[15px]">

@@ -45,8 +45,8 @@ const WhyChooseUs = () => {
         </div>
 
         <Link
-          to="/contact-us"
-          className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-15 py-2 sm:py-4 rounded-full font-medium transition duration-300"
+          to="/contact-us#contact"
+          className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-15 py-2 sm:py-3 rounded-full font-medium transition duration-300"
         >
           get started
         </Link>

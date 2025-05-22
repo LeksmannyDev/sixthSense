@@ -23,7 +23,7 @@ const Banner1 = () => {
           Join us on this journey to transform leadership
         </h2>{" "}
         <Link
-          to="/contact-us"
+          to="/contact-us#contact"
           className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-18 py-2 sm:py-4 rounded-full font-medium transition duration-300"
         >
           get started

@@ -3,7 +3,7 @@ import { eventAsset } from "../EventsSection/eventsAssets";
 
 const LmcClass = () => {
   return (
-    <section className="bg-light py-20 px-4 sm:px-6 lg:px-24">
+    <section className="bg-light py-20  px-4 sm:px-6 md:px-10">
       <div className="text-gray max-w-5xl text-justify mx-auto">
         {/* Heading */}
         <h1 className="text-3xl md:text-[40px] font-medium text-center text-blue mb-8">
@@ -17,6 +17,8 @@ const LmcClass = () => {
           leadership defines the success of organizations. As businesses
           confront unprecedented challenges, from volatile markets to the demand
           for innovation, the way leadership responds directly impacts outcomes.
+          <br />
+          <br />
           Yet, research consistently highlights a troubling gap: most leaders
           lack the structured support and tools to transform potential into
           exceptional performance. While organizations invest heavily in
@@ -43,17 +45,18 @@ const LmcClass = () => {
           to refine their skills, overcome blind spots, and achieve breakthrough
           results. Leadership is no exception. Professional coaching can turn
           reactive tendencies in leaders into proactive strategies and catalyse
-          sustained growth for individuals and teams alike. The Leadership
-          Mastery Circle (LMC) bridges this gap, offering a premium,
-          subscription-based coaching programme designed exclusively for
-          executive teams seeking to elevate their collective leadership impact.
-          By addressing performance challenges, fostering synergy, and equipping
-          leaders with actionable strategies, LMC transforms teams into
-          cohesive, high-performing units. This isn’t just about
-          improvement—it’s about driving measurable results and creating a
-          lasting competitive advantage. With the Leadership Mastery Circle,
-          you’re not just investing in leadership—you’re optimizing the
-          potential of your organization for the present and the future.
+          sustained growth for individuals and teams alike. <br />
+          <br /> The Leadership Mastery Circle (LMC) bridges this gap, offering
+          a premium, subscription-based coaching programme designed exclusively
+          for executive teams seeking to elevate their collective leadership
+          impact. By addressing performance challenges, fostering synergy, and
+          equipping leaders with actionable strategies, LMC transforms teams
+          into cohesive, high-performing units. <br />
+          <br /> This isn’t just about improvement—it’s about driving measurable
+          results and creating a lasting competitive advantage. With the
+          Leadership Mastery Circle, you’re not just investing in
+          leadership—you’re optimizing the potential of your organization for
+          the present and the future.
         </p>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../Sections/HomeSection/Hero";
 import Banner1 from "../Sections/HomeSection/Banner1";
 import Graphic from "../Sections/HomeSection/Graphic";
@@ -8,6 +7,7 @@ import Banner2 from "../Sections/WhoWeAreSection/Banner2";
 import WhyChooseUs from "../Sections/HomeSection/WhyChooseUs";
 import TestimonialSection from "../Sections/HomeSection/TestimonialSection";
 import HomeBanner2 from "../Sections/HomeSection/HomeBanner2";
+import HomeBlog from "../Sections/HomeSection/HomeBlog";
 
 const Home = () => {
   return (
@@ -18,6 +18,7 @@ const Home = () => {
       <HomeService />
       <Brands />
       <WhyChooseUs />
+      <HomeBlog />
       <TestimonialSection />
       <Banner2 />
     </>

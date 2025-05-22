@@ -137,7 +137,11 @@ export const facultyList = [
     image: faculty6,
     linkedin: "https://www.linkedin.com/in/leslie-george-94581422/",
   },
-  { name: "OLAWALE THOMAS", image: faculty7, linkedin: "" },
+  {
+    name: "OLAWALE THOMAS",
+    image: faculty7,
+    linkedin: "https://www.linkedin.com/in/wale-thomas-3b10606a/",
+  },
   {
     name: "TINUKU OLAOYE",
     image: faculty8,

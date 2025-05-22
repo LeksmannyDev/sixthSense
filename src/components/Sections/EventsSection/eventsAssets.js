@@ -305,7 +305,7 @@ export const gain = [
   {
     title: "Enhanced<br/> Leadership Impact",
     description:
-      "Acquire strategies to navigate workplace challenges, resolve conflicts, and enhance collaboration within teams",
+      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
   },
   {
     title: "Sustainable Leadership<br/> Growth",
@@ -315,6 +315,6 @@ export const gain = [
   {
     title: "Enhanced<br/> Leadership Impact",
     description:
-      "Acquire strategies to navigate workplace challenges, resolve conflicts, and enhance collaboration within teams",
+      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
   },
 ];

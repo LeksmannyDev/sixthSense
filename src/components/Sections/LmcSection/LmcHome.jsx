@@ -17,6 +17,7 @@ const LmcHome = () => {
       ctaLink="/contact-us"
       ctaText="apply now"
       brochureText="Download Brochure"
+      brochureLink="https://drive.google.com/file/d/1NiIXSOFlnVY6vW1q5a7wkw5NaVxFYK18/view?usp=sharing"
     />
   );
 };

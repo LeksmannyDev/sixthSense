@@ -46,7 +46,7 @@ const Masterclass = () => {
           </Link>
 
           <a
-            href="https://drive.google.com/file/d/1NiIXSOFlnVY6vW1q5a7wkw5NaVxFYK18/view?usp=sharing"
+            href="https://drive.google.com/file/d/15rc4gzTn08_K4q_pY0c5VPDowrQujf7f/view?usp=sharing"
             target="_blank"
             download
             className="border-3 border-[#ff0c10] text-center uppercase text-xs sm:text-sm md:text-md text-deepBlue font-medium cursor-pointer px-5 sm:px-8 md:px-12 py-2 sm:py-3 rounded-full transition-all duration-300 bg-transparent flex items-center gap-2"

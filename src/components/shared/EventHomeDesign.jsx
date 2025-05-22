@@ -10,6 +10,7 @@ const EventHomeDesign = ({
   brochureText,
   title,
   subtitle,
+  brochureLink,
 }) => {
   return (
     <div className="w-full overflow-hidden">
@@ -30,7 +31,7 @@ const EventHomeDesign = ({
             {title}
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl py-6 text-light">
+          <p className="text-lg sm:text-xl md:text-[22px] py-6 text-light">
             {subtitle}
           </p>
 
@@ -42,14 +43,18 @@ const EventHomeDesign = ({
               {ctaText}
             </Link>
 
-            <button className="border-3 border-[#ff0c10] text-center uppercase text-xs sm:text-sm md:text-md text-white font-medium cursor-pointer px-5 sm:px-8 md:px-12 py-2 sm:py-3  rounded-full transition-all duration-300 bg-transparent flex items-center gap-2">
+            <a
+              href={brochureLink}
+              target="_blank"
+              className="border-3 border-[#ff0c10] text-center uppercase text-xs sm:text-sm md:text-md text-white font-medium cursor-pointer px-5 sm:px-8 md:px-12 py-2 sm:py-3  rounded-full transition-all duration-300 bg-transparent flex items-center gap-2"
+            >
               {brochureText}
               <img
                 src={assets.download}
                 alt="Download icon"
                 className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>
