@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BackgroundDesign from "../../shared/BackgroundDesign";
 import { assets } from "../../../assets/asset";
+import Call from "../../shared/Call";
 
 const HeroWhat = () => {
   const initialBg = assets.whatBg;
@@ -17,14 +18,7 @@ const HeroWhat = () => {
             tailored solutions. Together, we shape the future of leadership.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-            <Link
-              to="/contact-us"
-              className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300"
-            >
-              schedule a free call
-            </Link>
-          </div>
+          <Call />
         </div>
       </BackgroundDesign>
     </div>

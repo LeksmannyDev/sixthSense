@@ -15,11 +15,15 @@ import zylus from "../../../assets/What/zylus.png";
 import roland from "../../../assets/Home/roland.png";
 import finglow from "../../../assets/Home/finglow.png";
 import banner1 from "../../../assets/Home/Banner1.png";
+import prevArrow from "../../../assets/Home/leftArrow.svg";
+import nextArrow from "../../../assets/Home/nextArrow.svg";
 
 export const homeAsset = {
   homeBanner1,
   choose,
   banner1,
+  prevArrow,
+  nextArrow,
 };
 
 export const services = [

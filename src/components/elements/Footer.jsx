@@ -9,8 +9,7 @@ const Footer = () => {
   return (
     <footer className="text-white">
       {/* Newsletter */}
-      <div className="bg-gradient-blue w-full px-6 sm:px-10 lg:px-20 py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-6 gap-x-60">
-        {/* Left Side - Subscribe Text */}
+      <div className="bg-gradient-blue w-full px-4 md:px-10 sm:px-8  py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-6  lg:gap-x-10 xl:gap-x-70">
         <div className="flex items-center gap-3 text-white w-full lg:w-auto justify-center lg:justify-start">
           <img src={assets.mail} alt="Mail icon" className="h-10 w-10" />
           <span className="font-medium text-sm mt-1 sm:text-[20px]">
@@ -18,14 +17,13 @@ const Footer = () => {
           </span>
         </div>
 
-        {/* Right Side - Input and Button */}
         <div className="flex w-full max-w-md lg:max-w-xl h-13  rounded-full overflow-hidden bg-white">
           <input
             type="email"
             placeholder="YOUR EMAIL ADDRESS"
             className="flex-1 px-5 text-xs sm:text-sm text-[#1F3864] placeholder:text-md font-medium focus:outline-none placeholder-[#1F3864]"
           />
-          <button className="bg-red px-4 sm:px-6 text-xs sm:text-sm text-white font-semibold ">
+          <button className="bg-red cursor-pointer px-4 sm:px-6 text-xs sm:text-sm text-white font-semibold ">
             GET STARTED
           </button>
         </div>
@@ -98,7 +96,14 @@ const Footer = () => {
                     +234 708 040 1080
                   </a>
                 </p>
-
+                <p>
+                  <a
+                    href="mailto:sixthsenseleadership@gmail.com"
+                    className="text-white hover:underline"
+                  >
+                    info@sixthsenseleadership.com
+                  </a>
+                </p>
                 <p>
                   <a
                     href="https://www.sixthsenseleadership.com"
@@ -107,15 +112,6 @@ const Footer = () => {
                     className="text-white hover:underline"
                   >
                     www.sixthsenseleadership.com
-                  </a>
-                </p>
-
-                <p>
-                  <a
-                    href="mailto:sixthsenseleadership@gmail.com"
-                    className="text-white hover:underline"
-                  >
-                    sixthsenseleadership@gmail.com
                   </a>
                 </p>
               </div>

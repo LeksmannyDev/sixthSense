@@ -12,7 +12,7 @@ const TlmNextSteps = () => {
           <br /> Your leadership evolution starts here — welcome on board!
         </>
       }
-      buttonLink="/brochure.pdf"
+      buttonLink="https://drive.google.com/file/d/15rc4gzTn08_K4q_pY0c5VPDowrQujf7f/view?usp=sharing"
     />
   );
 };

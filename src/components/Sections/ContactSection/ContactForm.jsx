@@ -56,7 +56,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <section id="contact" className="bg-white overflow-hidden text-gray">
+    <section id="contact" className="bg-white overflow-x-hidden text-gray">
       <div className="py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] mx-auto">
         <div className="flex flex-col items-center justify-center lg:flex-row gap-6 md:gap-8 lg:gap-10">
           {/* LEFT COLUMN */}
@@ -66,7 +66,7 @@ const ContactForm = () => {
               {
                 img: envelope,
                 title: "Email Address",
-                desc: "sixthsenseleadership@gmail.com",
+                desc: "info@sixthsenseleadership.com",
               },
               {
                 img: location,
