@@ -7,6 +7,8 @@ import share from "../../../assets/Contact/Vector-4.svg";
 import facebook from "../../../assets/Contact/fb icon.svg";
 import pinterest from "../../../assets/Contact/pin icon.svg";
 import twitter from "../../../assets/Contact/twi icon.svg";
+import linkedin from "../../../assets/Contact/linkedin.png";
+import instagram from "../../../assets/Contact/instagram.png";
 import youtube from "../../../assets/Contact/youtube icon.svg";
 import { FaPaperPlane, FaCheck, FaExclamationTriangle } from "react-icons/fa";
 
@@ -138,13 +140,18 @@ const ContactForm = () => {
                 <div className="flex gap-3 sm:gap-4">
                   {[
                     {
-                      icon: facebook,
-                      link: "#",
+                      icon: linkedin,
+                      link: "https://www.linkedin.com/company/sixthsense-leadership-consulting-ltd/",
                     },
                     {
-                      icon: pinterest,
-                      link: "#",
+                      icon: instagram,
+                      link: "https://www.instagram.com/sixthsenseleadership/profilecard/?igsh=MWxlNjFlaHA1NG1rOQ==",
                     },
+                    {
+                      icon: facebook,
+                      link: "https://web.facebook.com/search/top?q=sixth%20sense%20leadership",
+                    },
+
                     {
                       icon: twitter,
                       link: "#",
