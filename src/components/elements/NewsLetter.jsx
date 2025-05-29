@@ -1,91 +1,90 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { assets } from "../../assets/asset";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState({ text: "", isError: false });
+  const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!email) {
-      setMessage({ text: "Please enter your email", isError: true });
-      return;
-    }
-
-    setLoading(true);
-    setMessage({ text: "", isError: false });
+    setIsSubmitting(true);
+    setMessage("");
 
     try {
-      // Replace with your Zoho endpoint or form integration
       const response = await fetch(
-        "https://forms.zohopublic.com/leksmannydevgm1/form/Email/formperma/a9Ekca8UOmD0rNcoOb9prDIESNJ_Aa5zDmM-reqHXLU",
+        "https://script.google.com/macros/s/AKfycbxEfYJSVZjVi-jy-VD0u-m_p-DcRXcJEPeRXy5WbT5Ou6BjDQFTrvtmkh5vU6tfcbjw/exec",
         {
           method: "POST",
+          mode: "no-cors",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            email: email,
-            // Add any additional fields required by Zoho
+            email,
+            timestamp: new Date().toISOString(),
+            // source: "website",
           }),
         }
       );
 
-      if (response.ok) {
-        setMessage({ text: "Thank you for subscribing!", isError: false });
-        setEmail("");
-      } else {
-        throw new Error("Subscription failed");
-      }
+      setMessage("Successfully subscribed to newsletter!");
+      setEmail("");
     } catch (error) {
-      setMessage({
-        text: "Subscription failed. Please try again later.",
-        isError: true,
-      });
+      console.error("Subscription error:", error);
+      setMessage("Something went wrong. Please try again.");
     } finally {
-      setLoading(false);
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="bg-gradient-blue w-full px-4 md:px-10 sm:px-8 py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-x-10 xl:gap-x-70">
-      <div className="flex items-center gap-3 text-white w-full lg:w-auto justify-center lg:justify-start">
-        <img src={assets.mail} alt="Mail icon" className="h-10 w-10" />
-        <span className="font-medium text-sm mt-1 sm:text-[20px]">
-          SUBSCRIBE TO NEWSLETTER
-        </span>
-      </div>
+    <div className="bg-gradient-blue w-full px-4 sm:px-10 lg:px-20 py-12 lg:py-20 flex flex-col items-center gap-4">
+      {/* Row: Icon + Form with horizontal gap on desktop */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-x-30 xl:gap-x-60">
+        {/* Title + Icon */}
+        <div className="flex items-center gap-3 text-white justify-center">
+          <img src={assets.mail} alt="Mail icon" className="h-10 w-10" />
+          <span className="font-medium text-sm sm:text-base md:text-lg mt-1 text-center">
+            SUBSCRIBE TO NEWSLETTER
+          </span>
+        </div>
 
-      <form onSubmit={handleSubmit} className="w-full max-w-md lg:max-w-xl">
-        <div className="flex w-full h-13 rounded-full overflow-hidden bg-white">
+        {/* Newsletter Form */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex w-full max-w-full sm:max-w-md lg:max-w-xl h-13 rounded-full overflow-hidden bg-white"
+        >
           <input
             type="email"
+            name="CONTACT_EMAIL"
+            placeholder="YOUR EMAIL ADDRESS"
+            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="YOUR EMAIL ADDRESS"
-            className="flex-1 px-5 text-xs sm:text-sm text-[#1F3864] placeholder:text-md font-medium focus:outline-none placeholder-[#1F3864]"
-            disabled={loading}
+            className="flex-1 px-4 sm:px-5 text-sm sm:text-base text-[#1F3864] placeholder:text-sm font-medium focus:outline-none placeholder-[#1F3864]"
+            disabled={isSubmitting}
           />
           <button
             type="submit"
-            className="bg-red cursor-pointer px-4 sm:px-6 text-xs sm:text-sm text-white font-semibold hover:bg-darkRed transition-colors"
-            disabled={loading}
+            className="bg-red px-3 sm:px-6 text-xs sm:text-sm text-white cursor-pointer font-semibold whitespace-nowrap"
+            disabled={isSubmitting}
           >
-            {loading ? "PROCESSING..." : "GET STARTED"}
+            {isSubmitting ? "Subscribing..." : "GET STARTED"}
           </button>
-        </div>
-        {message.text && (
-          <p
-            className={`mt-2 text-center text-sm ${
-              message.isError ? "text-red" : "text-green-500"
-            }`}
-          >
-            {message.text}
-          </p>
-        )}
-      </form>
+        </form>
+      </div>
+
+      {/* Message under the form */}
+      {message && (
+        <p
+          className={`text-center text-sm sm:text-base font-medium ${
+            message.includes("Successfully") ? "text-white" : "text-red"
+          }`}
+        >
+          {message}
+        </p>
+      )}
     </div>
   );
 };

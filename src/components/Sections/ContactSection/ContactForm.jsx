@@ -5,7 +5,6 @@ import location from "../../../assets/Contact/location icon.svg";
 import globe from "../../../assets/Contact/website icon.svg";
 import share from "../../../assets/Contact/Vector-4.svg";
 import facebook from "../../../assets/Contact/fb icon.svg";
-import pinterest from "../../../assets/Contact/pin icon.svg";
 import twitter from "../../../assets/Contact/twi icon.svg";
 import linkedin from "../../../assets/Contact/linkedin.png";
 import instagram from "../../../assets/Contact/instagram.png";
@@ -32,7 +31,7 @@ const ContactForm = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "a",
+          access_key: "dc1ac2cf-6a33-45f8-a66f-f2f716fa10ef",
           name: formData.get("name"),
           email: formData.get("email"),
           subject: formData.get("subject"),
@@ -184,7 +183,7 @@ const ContactForm = () => {
             <h2 className="font-semibold text-[18px] sm:text-[19px] md:text-[20px] mb-2">
               Send Message
             </h2>
-            <p className="text-[13px] sm:text-[14px] md:text-[15px] mb-4 sm:mb-5 md:mb-6">
+            <p className="text-[13px] sm:text-[14px] md:text-[15px] mb-4 ">
               We're here to listen and help you! Whether you have questions,
               ideas, or feedback, your thoughts are important to us. Reach out
               today, and let's start a meaningful conversation!
@@ -192,11 +191,15 @@ const ContactForm = () => {
 
             <form
               onSubmit={handleSubmit}
-              className="space-y-3 sm:space-y-5 py-4"
+              className="space-y-3 sm:space-y-5 py-1"
             >
-              <input type="hidden" name="access_key" value="a" />
+              <input
+                type="hidden"
+                name="access_key"
+                value="dc1ac2cf-6a33-45f8-a66f-f2f716fa10ef"
+              />
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-1 ">
                 {[
                   { name: "name", placeholder: "Your Name" },
                   {
@@ -232,14 +235,14 @@ const ContactForm = () => {
               {status.success && (
                 <div className="flex items-center p-3 text-sm text-white font-medium text-font bg-gradient-blue rounded-2xl md:text-base">
                   <FaCheck className="flex-shrink-0 mr-2" />
-                  Message sent successfully! I'll get back to you soon.
+                  Message sent successfully! We'll get back to you soon.
                 </div>
               )}
 
               {status.error && (
                 <div className="flex items-center p-3 text-sm text-white font-medium text-font bg-red-900 rounded-2xl md:text-base">
                   <FaExclamationTriangle className="flex-shrink-0 mr-2" />
-                  Failed to send message. Please try again or email me directly.
+                  Failed to send message. Please try again or email us directly.
                 </div>
               )}
             </form>
