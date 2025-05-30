@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { homeAsset } from "./homeAsset";
 import next from "../../../assets/Home/nect.svg";
-import fallback1 from "../../../assets/Blog/1.jpg";
-import fallback2 from "../../../assets/Blog/2.jpg";
-import fallback3 from "../../../assets/Blog/3.jpg";
-import fallback4 from "../../../assets/Blog/4.jpg";
+import fallback1 from "../../../assets/Blog/1.webp";
+import fallback2 from "../../../assets/Blog/2.webp";
+import fallback3 from "../../../assets/Blog/3.webp";
+import fallback4 from "../../../assets/Blog/4.webp";
 
 const fallbackImages = [fallback1, fallback2, fallback3, fallback4];
 

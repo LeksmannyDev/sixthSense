@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../../assets/Services/R1.jpg";
-import img2 from "../../../assets/Services/R2.jpg";
-import img3 from "../../../assets/Services/R3.jpg";
+import img1 from "../../../assets/Services/R1.webp";
+import img2 from "../../../assets/Services/R2.webp";
+import img3 from "../../../assets/Services/R3.webp";
 
 const GalleryCard = ({ img, index, tall = false }) => {
   const heightClass = tall

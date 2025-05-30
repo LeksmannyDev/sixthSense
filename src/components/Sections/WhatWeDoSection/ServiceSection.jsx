@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import service1 from "../../../assets/What/service1.jpg";
-import service2 from "../../../assets/What/service2.jpg";
+import service1 from "../../../assets/What/service1.webp";
+import service2 from "../../../assets/What/service2.webp";
 import viewMore from "../../../assets/What/View More.png";
 import SectionHeader from "../../shared/SectionHeader";
 

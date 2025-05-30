@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../../assets/Events/gal1.jpg";
-import img2 from "../../../assets/Events/gal2.jpg";
-import img3 from "../../../assets/Events/gal3.jpg";
-import img4 from "../../../assets/Events/gal4.jpg";
+import img1 from "../../../assets/Events/gal1.webp";
+import img2 from "../../../assets/Events/gal2.webp";
+import img3 from "../../../assets/Events/gal3.webp";
+import img4 from "../../../assets/Events/gal4.webp";
 const GalleryCard = ({ img, index, tall = false }) => {
   const heightClass = tall
     ? "h-[400px] xl:h-[500px]"
