@@ -12,7 +12,7 @@ const Objectives = () => {
           {objectives.map((service, index) => (
             <div
               key={index}
-              className="rounded-[50px] border border-white bg-white py-7 px-0 overflow-hidden flex flex-col"
+              className="rounded-[50px]  bg-white py-7 px-0 overflow-hidden flex flex-col"
             >
               <div className="p-2 flex flex-col h-full mx-auto justify-center gap-y-2 items-center text-center">
                 <h3 className="uppercase text-bebas text-gray text-[30px] sm:text-[40px] md:text-[45px]">
