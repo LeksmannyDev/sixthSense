@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { eventAsset } from "./eventsAssets";
 
 const Countdown = () => {
-  let targetDate = "June 10, 2025";
+  let targetDate = "September 10, 2025";
 
   const [timeLeft, setTimeLeft] = useState({
     days: "00",

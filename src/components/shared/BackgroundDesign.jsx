@@ -4,7 +4,7 @@ import { homeAsset } from "../Sections/HomeSection/homeAsset";
 
 const BackgroundDesign = ({ children, initialBackground, mode = "static" }) => {
   const animatedBackgrounds = [
-    initialBackground, // You can keep this or customize
+    initialBackground,
     assets.home,
     homeAsset.homeBanner1,
     assets.whoBanner,
@@ -12,6 +12,20 @@ const BackgroundDesign = ({ children, initialBackground, mode = "static" }) => {
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
 
+  // ✅ Preload the initial background and others
+  useEffect(() => {
+    const imagesToPreload = [initialBackground];
+    if (mode === "animated") {
+      imagesToPreload.push(...animatedBackgrounds.slice(1)); // skip duplicate initialBackground
+    }
+
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [initialBackground, mode]);
+
+  // Animated background switch logic
   useEffect(() => {
     if (mode !== "animated") return;
 
