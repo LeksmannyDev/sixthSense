@@ -45,6 +45,21 @@ const Header = () => {
     { label: "contact us", slug: "contact-us" },
   ];
 
+  const pages = [
+    {
+      name: "Transformational Leadership Masterclass (TLM)",
+      path: "/events/transformational-leadership",
+    },
+    {
+      name: "MP3 Masterclass",
+      path: "/events/mp3-masterclass",
+    },
+    {
+      name: "Leadership Mastery Circle",
+      path: "/events/leadership-circle",
+    },
+  ];
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 ${
@@ -84,20 +99,7 @@ const Header = () => {
                     </span>
 
                     <ul className="absolute top-full left-0  shadow-lg w-72 text-black opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 invisible z-50 transform -translate-x-4 group-hover:translate-x-0">
-                      {[
-                        {
-                          name: "Transformational Leadership Masterclass (TLM)",
-                          path: "/events/transformational-leadership",
-                        },
-                        {
-                          name: "MP3 Masterclass",
-                          path: "/events/mp3-masterclass",
-                        },
-                        {
-                          name: "Leadership Mastery Circle",
-                          path: "/events/leadership-circle",
-                        },
-                      ].map((subitem) => (
+                      {pages.map((subitem) => (
                         <li key={subitem.path}>
                           <Link
                             to={subitem.path}
@@ -169,17 +171,7 @@ const Header = () => {
 
                       {eventsOpen && (
                         <ul className="mt-2 max-w-50 mx-auto space-y-4">
-                          {[
-                            {
-                              name: "Transformational Leadership Masterclass (TLC)",
-                              path: "/events/tlc",
-                            },
-                            { name: "MP3 Masterclass", path: "/events/mp3" },
-                            {
-                              name: "Leadership Mastery Circle",
-                              path: "/events/lmc",
-                            },
-                          ].map((subitem) => (
+                          {pages.map((subitem) => (
                             <li key={subitem.path}>
                               <Link
                                 to={subitem.path}

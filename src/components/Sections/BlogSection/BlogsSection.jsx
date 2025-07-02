@@ -18,7 +18,7 @@ const BlogsSection = () => {
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@alessbutler`
+          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sixthsenseleadership`
         );
 
         if (res.data.status === "ok") {

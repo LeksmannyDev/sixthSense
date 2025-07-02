@@ -108,7 +108,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="max-w-7xl px-4 sm:px-6 md:px-10 mx-auto mt-20 md:mt-40 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-white">
           <p className="text-center md:text-left uppercase mb-4 md:mb-0">
-            Copyright &copy; 2024 SIXTHSENSE LEADERSHIP. ALL RIGHTS RESERVED.
+            Copyright &copy; 2025 SIXTHSENSE LEADERSHIP. ALL RIGHTS RESERVED.
           </p>
 
           {/* Social Icon Images */}
@@ -135,7 +135,7 @@ const Footer = () => {
               <img src={facebook} alt="Facebook" className="h-5 w-auto" />
             </a>
 
-            <a
+            {/* <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -148,7 +148,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <img src={youtube} alt="YouTube" className="h-5 w-auto" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
