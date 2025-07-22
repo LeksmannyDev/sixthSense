@@ -1,4 +1,4 @@
-import logo from "./elements/sixthlogo.svg";
+import logo from "./elements/sixthLogoWhite.svg";
 import Logo from "./elements/sixthLogo.svg";
 import mail from "./elements/mail.png";
 import mission from "../assets/Who/mission.png";
