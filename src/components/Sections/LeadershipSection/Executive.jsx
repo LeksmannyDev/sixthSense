@@ -36,7 +36,7 @@ const Executive = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center  mt-14">
           <Link
-            to="/contact-us"
+            to="/contact-us#contact"
             className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-8 sm:px-10 md:px-12 py-2 sm:py-3 rounded-full font-medium transition duration-300"
           >
             Apply Now
