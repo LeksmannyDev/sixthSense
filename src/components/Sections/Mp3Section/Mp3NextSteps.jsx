@@ -6,9 +6,8 @@ const Mp3NextSteps = () => {
     <NextSteps
       text={
         <>
-          Begin your journey to becoming a change-driven leader and take your
-          organization to the next level. Download the brochure and register now
-          for the MP3 Masterclass.
+          Your leadership evolution starts here.
+          <br /> Download the brochure and register now. Welcome on board!
         </>
       }
       buttonLink="https://drive.google.com/file/d/1JXGBvoxGdbl6mDEe2n8PMusi8gPChBk5/view?usp=sharing"

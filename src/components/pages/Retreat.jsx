@@ -4,14 +4,16 @@ import Recharge from "../Sections/RetreatSection/Recharge";
 import RetreatBenefits from "../Sections/RetreatSection/RetreatBenefits";
 import Banner2 from "../Sections/WhoWeAreSection/Banner2";
 import RetreatPictures from "../Sections/RetreatSection/RetreatPictures";
+import RetreatQuote from "../Sections/RetreatSection/RetreatQuote";
 
 const Retreat = () => {
   return (
     <>
       <HomeRetreat />
-      <Recharge />
-      <RetreatPictures />
+      <RetreatQuote />
       <RetreatBenefits />
+      {/* <Recharge /> */}
+      <RetreatPictures />
       <Banner2 />
     </>
   );

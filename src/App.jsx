@@ -72,7 +72,7 @@ function App() {
             }
           />
           <Route
-            path="/events/transformational-leadership"
+            path="/transformational-leadership"
             element={
               <Layout>
                 <PageTransitionWrapper>
@@ -82,7 +82,7 @@ function App() {
             }
           />
           <Route
-            path="/events/mp3-masterclass"
+            path="/mp3-masterclass"
             element={
               <Layout>
                 <PageTransitionWrapper>
@@ -92,7 +92,7 @@ function App() {
             }
           />
           <Route
-            path="/events/leadership-circle"
+            path="/leadership-circle"
             element={
               <Layout>
                 <PageTransitionWrapper>

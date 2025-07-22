@@ -6,7 +6,6 @@ const EventsHome = () => {
   return (
     <EventHomeDesign
       backgroundImage={eventAsset.background1}
-      topText="GET READY TO LEAD CHANGE AND REPOSITION YOUR ORGANIZATION"
       title={
         <>
           Transformational Leadership

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const WhyChooseUs = () => {
   return (
-    <section className="relative w-full h-[800px] sm:h-[700px] md:h-[750px] lg:h-[550px] xl:h-[600px]">
+    <section className="relative w-full h-[850px] sm:h-[700px] md:h-[750px] lg:h-[550px] xl:h-[700px]">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <img
@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
           alt="Banner Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#1F3864] opacity-70" />
+        <div className="absolute inset-0 bg-[#1F3864] opacity-80" />
       </div>
 
       {/* Overlay Content */}
@@ -34,10 +34,10 @@ const WhyChooseUs = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl md:text-[27px]  font-bold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-[27px] font-bold mb-2">
                 {feature.title}
               </h3>
-              <p className="text-sm sm:text-base max-w-[270px]">
+              <p className="text-md sm:text-[19px] max-w-[270px]">
                 {feature.description}
               </p>
             </div>

@@ -7,6 +7,8 @@ import Executive from "../Sections/LeadershipSection/Executive";
 import OurApproach from "../Sections/LeadershipSection/OurApproach";
 import Banner2 from "../Sections/WhoWeAreSection/Banner2";
 import Graphic2 from "../Sections/LeadershipSection/Graphic2";
+import BeSpoke from "../Sections/LeadershipSection/BeSpoke";
+import TrainingImage from "../Sections/TrainingSection/TrainingImage";
 
 const Leadership = () => {
   return (
@@ -17,7 +19,9 @@ const Leadership = () => {
       {/* <Mp3Masterclass /> */}
       {/* <GallerySection title="Images from our last Session" /> */}
       <Executive />
+      <BeSpoke />
       <OurApproach />
+      <TrainingImage />
       {/* <GallerySection title="Images from last our Session" /> */}
       <Banner2 />
       {/* <Graphic2 /> */}

@@ -6,10 +6,8 @@ const TlmNextSteps = () => {
     <NextSteps
       text={
         <>
-          Begin your journey to becoming a change-driven leader and take your
-          organization to the next level. Download the brochure and register now
-          for the Transformational Leadership Masterclass.
-          <br /> Your leadership evolution starts here — welcome on board!
+          Your leadership evolution starts here.
+          <br /> Download the brochure and register now. Welcome on board!
         </>
       }
       buttonLink="https://drive.google.com/file/d/15rc4gzTn08_K4q_pY0c5VPDowrQujf7f/view?usp=sharing"

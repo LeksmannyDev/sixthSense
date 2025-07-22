@@ -5,30 +5,30 @@ const Banner2 = () => {
   return (
     <section
       className="relative w-full overflow-hidden"
-      style={{ height: "400px" }}
+      style={{ height: "500px" }}
     >
       <div className="relative w-full h-full overflow-hidden">
         <img
           src={assets.whoBanner2}
           alt="brochure"
           className="w-full h-full object-cover"
-          style={{ width: "100%", height: "800px" }}
+          style={{ width: "100%", height: "950px" }}
         />
       </div>
 
       {/* Dark overlay with subtle transition */}
-      <div className="absolute inset-0 bg-black opacity-85"></div>
+      <div className="absolute inset-0 bg-[#112953] opacity-85"></div>
 
       {/* Text Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 md:px-10 mx-auto w-full max-w-7xl">
-        <div className="font-medium text-2xl sm:text-3xl md:text-5xl transform transition-transform duration-700 hover:scale-105">
+        <div className="font-medium text-2xl sm:text-3xl md:text-4xl transform transition-transform duration-700 hover:scale-105">
           <h2>Download our Brochure</h2>
         </div>
 
-        <p className="text-md sm:text-lg md:text-xl lg:text-2xl mt-3 sm:mt-5 text-light mb-4 sm:mb-6 max-w-6xl">
-          Discover how SixthSense Leadership can transform your organization.
-          Our comprehensive brochure provides insights into our services,
-          success stories, and the impact we can make together.
+        <p className="text-md sm:text-lg md:text-[22.5px] mt-3 sm:mt-5 text-light mb-4 sm:mb-6 max-w-3xl">
+          Discover how <strong>SixthSense Leadership</strong> can transform your
+          organization. Our comprehensive brochure provides insights into our
+          services, success stories, and the impact we can make together.
         </p>
 
         <div className="flex flex-row">

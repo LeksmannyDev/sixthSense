@@ -59,23 +59,23 @@ const LmcNumbers = () => {
   ];
 
   return (
-    <div className="bg-light sm:py-30 py-16 px-4 text-center">
-      <h2 className="text-2xl md:text-[40px] font-medium text-blue mb-10">
+    <div className="bg-light sm:py-25 py-16 px-4 sm:px-6 md:px-8 text-center">
+      <h1 className="text-2xl md:text-3xl uppercase lg:text-[37px] font-medium text-center text-blue mb-8">
         What the Numbers Say?
-      </h2>
+      </h1>
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {stats.map((stat, index) => (
           <div
             key={index}
-            className={`px-4 py-10 sm:py-10 md:py-12 rounded-[50px] ${
-              index % 2 === 1 ? "bg-[#FFFFFF]" : "bg-[#FF0C101A]"
+            className={`py-10 sm:py-10 md:py-12 rounded-[50px] ${
+              index % 2 === 1 ? "bg-[#FFFFFF]" : "bg-[#CEE9FF]"
             }`}
           >
-            <p className="text-red text-lg italic">{stat.title}</p>
+            <p className="text-red text-lg italic font-medium">{stat.title}</p>
             <h3 className="text-4xl sm:text-6xl font-black text-blue my-3">
               {stat.number}
             </h3>
-            <p className="text-[14px] mx-auto sm:max-w-xs text-center text-gray px-2 sm:px-0">
+            <p className="text-[14px] mx-auto sm:max-w-xs text-center text-gray px-2 sm:px-10">
               {stat.description}
             </p>
           </div>

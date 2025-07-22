@@ -8,9 +8,9 @@ const Call = () => {
           href="https://sixthsenseleadershipconsultingltd.zohobookings.com/#/sixthsenseleadershipconsultingltd"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300"
+          className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-md px-5 sm:px-14 py-3 md:py-4 rounded-full font-medium transition duration-300"
         >
-          schedule a free call
+          schedule a free DISCOVERY call
         </a>
       </div>
     </div>

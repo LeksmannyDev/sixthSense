@@ -7,13 +7,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [eventsOpen, setEventsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 80);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 80);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -28,47 +26,46 @@ const Header = () => {
   }, [location]);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
   const handleNavClick = (item) => {
     setActiveItem(item);
     setMenuOpen(false);
   };
-  const [eventsOpen, setEventsOpen] = useState(false);
 
   const navItems = [
     { label: "home", slug: "home" },
     { label: "who we are", slug: "who-we-are" },
     { label: "what we do", slug: "what-we-do" },
-    { label: "blog", slug: "blog" },
     { label: "our faculty", slug: "our-faculty" },
-    { label: "events", slug: "events" },
+    { label: "blog", slug: "blog" },
+    // { label: "events", slug: "events" },
     { label: "contact us", slug: "contact-us" },
   ];
 
   const pages = [
     {
       name: "Transformational Leadership Masterclass (TLM)",
-      path: "/events/transformational-leadership",
+      path: "/transformational-leadership",
     },
     {
       name: "MP3 Masterclass",
-      path: "/events/mp3-masterclass",
+      path: "/mp3-masterclass",
     },
     {
       name: "Leadership Mastery Circle",
-      path: "/events/leadership-circle",
+      path: "/leadership-circle",
     },
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 ${
-        scrolled ? "bg-black opacity-80" : "bg-transparent"
-      } backdrop-blur-sm h-15 transition-colors duration-300`}
-    >
-      <nav className="max-w-8xl mx-auto flex items-center justify-between h-full px-4 sm:px-6 md:px-8">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white h-15">
+      <nav className="max-w-8xl mx-auto flex items-center justify-between h-full px-4 sm:px-6 md:px-8 relative">
+        {/* Continuous red underline across entire navigation */}
+        <div className="absolute bottom-0 left-0 w-full h-[4px] bg-[#ff0c10] hidden xl:block"></div>
+
         <div className="flex items-center mr-30 h-full">
-          <img src={assets.logo} alt="Logo" className="h-10 w-auto" />
+          <a href="/">
+            <img src={assets.Logo} alt="Logo" className="h-10 w-auto" />
+          </a>
         </div>
 
         {/* Desktop Navigation */}
@@ -82,10 +79,10 @@ const Header = () => {
                 {item.slug === "events" ? (
                   <>
                     <span
-                      className={`flex flex-col justify-center h-full px-4 text-[15px] font-semibold uppercase cursor-pointer ${
+                      className={`relative flex flex-col justify-center h-full px-4 text-[15px] font-semibold uppercase cursor-pointer ${
                         activeItem === item.slug
-                          ? "text-white bg-[#ED1F241A] border-b-2 px-9 border-[#ED1F24]"
-                          : "text-[#f5f5f5]"
+                          ? "text-[#003366] bg-[#ED1F241A] px-9"
+                          : "text-[#003366]"
                       } group-hover:text-[#ff0c10] group-hover:-translate-x-1 transition-transform duration-300 ease-in-out`}
                     >
                       <div className="flex items-center space-x-2">
@@ -96,9 +93,14 @@ const Header = () => {
                           className="w-2 h-2 mt-[0px]"
                         />
                       </div>
+
+                      {/* White overlay to hide red underline under active item */}
+                      {activeItem === item.slug && (
+                        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-white z-10"></span>
+                      )}
                     </span>
 
-                    <ul className="absolute top-full left-0  shadow-lg w-72 text-black opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 invisible z-50 transform -translate-x-4 group-hover:translate-x-0">
+                    <ul className="absolute top-full left-0 shadow-lg w-72 text-black opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 invisible z-50 transform -translate-x-4 group-hover:translate-x-0">
                       {pages.map((subitem) => (
                         <li key={subitem.path}>
                           <Link
@@ -118,11 +120,16 @@ const Header = () => {
                     onClick={() => handleNavClick(item.slug)}
                     className={`group relative flex flex-col justify-center h-full px-4 text-[15px] font-semibold uppercase ${
                       activeItem === item.slug
-                        ? "text-white bg-[#ED1F241A] border-b-2 px-9 border-[#ED1F24]"
-                        : "text-[#f5f5f5]"
+                        ? "text-[#003366] bg-[#ED1F241A] px-9"
+                        : "text-[#003366]"
                     } hover:text-[#ff0c10]`}
                   >
                     {item.label}
+
+                    {/* White overlay to hide red underline under active item */}
+                    {activeItem === item.slug && (
+                      <span className="absolute bottom-0 left-0 w-full h-[4px] bg-white z-10"></span>
+                    )}
                   </Link>
                 )}
               </li>
@@ -133,7 +140,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <div className="xl:hidden flex items-center h-full">
           <FaBars
-            className="text-3xl text-white cursor-pointer"
+            className="text-3xl text-[#003366] cursor-pointer"
             onClick={toggleMenu}
           />
         </div>
@@ -144,9 +151,9 @@ const Header = () => {
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex justify-end px-6 pt-6">
+          <div className="flex justify-end px-8 pt-5">
             <FaTimes
-              className="text-3xl text-white cursor-pointer"
+              className="text-4xl text-[#003366] cursor-pointer"
               onClick={toggleMenu}
             />
           </div>

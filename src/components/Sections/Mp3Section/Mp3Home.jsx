@@ -6,7 +6,6 @@ const Mp3Home = () => {
   return (
     <EventHomeDesign
       backgroundImage={eventAsset.background3}
-      topText="Leadership Excellence Starts Here"
       title={
         <>
           MP3

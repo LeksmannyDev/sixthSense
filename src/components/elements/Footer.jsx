@@ -15,14 +15,14 @@ const Footer = () => {
       <Newsletter />
 
       {/* Contact Info */}
-      <div className="w-full bg-[#333333]   py-10 md:py-16 lg:py-25 text-white">
+      <div className="w-full bg-[#333333]   py-10 md:py-16 lg:py-20 text-white px-4 sm:px-6 lg:px-10">
         <div className="max-w-7xl mx-auto px-10 xl:px-1 flex flex-col md:flex-row items-start gap-10  xl:gap-x-40">
           <div className="flex-shrink-0 w-full md:w-auto">
             <Link to="/">
               <img
                 src={assets.logo}
                 alt="Logo"
-                className="h-16 sm:h-20 w-auto object-contain mx-auto md:mx-0"
+                className="h-12 sm:h-16 w-auto object-contain mx-auto md:mx-0"
               />
             </Link>
           </div>
@@ -37,17 +37,15 @@ const Footer = () => {
                   <Link to="/who-we-are">Who We Are</Link>
                 </li>
                 <li>
-                  <Link to="/events/transformational-leadership">
+                  <Link to="/transformational-leadership">
                     Transformational Leadership Masterclass
                   </Link>
                 </li>
                 <li>
-                  <Link to="/events/leadership-circle">
-                    Leadership Mastery Circle
-                  </Link>
+                  <Link to="/leadership-circle">Leadership Mastery Circle</Link>
                 </li>
                 <li>
-                  <Link to="/events/mp3-masterclass">MP3 Masterclass</Link>
+                  <Link to="/mp3-masterclass">MP3 Masterclass</Link>
                 </li>
               </ul>
 

@@ -53,7 +53,7 @@ const BackgroundDesign = ({ children, initialBackground, mode = "static" }) => {
           aria-hidden={index !== currentBgIndex}
         />
       ))}
-      <div className="absolute inset-0 bg-[#010101D6] opacity-90"></div>
+      <div className="absolute inset-0 bg-[#003366CC] opacity-90"></div>
       <div className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-10">
         {children}
       </div>

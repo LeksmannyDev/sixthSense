@@ -7,9 +7,9 @@ const Hero = () => {
   const homeContent = {
     title: [
       { text: "Empowering ", color: "text-white" },
-      { text: "Leaders, ", color: "text-red" },
+      { text: "Leaders, ", color: "text-reed" },
       { text: "Enabling", color: "text-white" },
-      { text: "Transformation ", color: "text-red" },
+      { text: "Transformation ", color: "text-reed" },
     ],
     description:
       "Let's help you position your organization for sustainable success",
@@ -21,12 +21,12 @@ const Hero = () => {
     <div className="w-full overflow-hidden font-metropolis">
       <BackgroundDesign initialBackground={initialBg} mode="animated">
         <div className="max-w-5xl text-center z-10 relative px-4 sm:px-6 md:px-10">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl uppercase mb-4 font-medium flex flex-wrap justify-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl uppercase mb-4 font-medium flex flex-wrap justify-center">
             {homeContent.title.map((part, i) => (
               <span
                 key={i}
                 className={`${part.color} mr-3 last:mr-0 ${
-                  part.text.trim() === "Leaders," ? "font-semibold" : ""
+                  part.text.trim() === "Leaders," ? "font-medium" : ""
                 }`}
               >
                 {part.text}
@@ -34,7 +34,7 @@ const Hero = () => {
             ))}
           </h1>
 
-          <p className="text-base sm:text-[18px] md:text-[21px] mt-3 max-w-4xl mx-auto text-light">
+          <p className="text-lg sm:text-xl md:text-[22px] mt-3 max-w-4xl mx-auto text-white">
             {homeContent.description}
           </p>
           <Call />

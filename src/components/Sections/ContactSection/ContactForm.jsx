@@ -104,7 +104,7 @@ const ContactForm = () => {
                   className="block"
                 >
                   <div className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md ">
-                    <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[55px] sm:min-h-[55px]">
+                    <div className="bg-[#1F38641A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[55px] sm:min-h-[55px]">
                       <img
                         src={item.img}
                         alt={item.title}
@@ -112,10 +112,10 @@ const ContactForm = () => {
                       />
                     </div>
                     <div className="mt-1">
-                      <h3 className="font-semibold text-[15px] sm:text-[16px] md:text-[17px] text-gray">
+                      <h3 className="font-semibold text-[15px] sm:text-[16px] md:text-lg text-gray">
                         {item.title}
                       </h3>
-                      <p className="text-xs sm:text-sm max-w-xs mx-auto text-gray">
+                      <p className="text-xs sm:text-base max-w-xs mx-auto text-gray">
                         {item.desc}
                       </p>
                     </div>
@@ -125,7 +125,7 @@ const ContactForm = () => {
             })}
 
             <div className="flex items-start gap-4 p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
-              <div className="bg-[#6391C21A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[55px] sm:min-h-[55px]">
+              <div className="bg-[#1F38641A] rounded-full flex items-center justify-center min-w-[40px] min-h-[40px] sm:min-w-[55px] sm:min-h-[55px]">
                 <img
                   src={share}
                   alt=""
@@ -133,7 +133,7 @@ const ContactForm = () => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-[15px] sm:text-[16px] md:text-[17px] text-gray mb-2">
+                <h3 className="font-semibold text-[15px] sm:text-[16px] md:text-lg text-gray mb-2">
                   Social Media
                 </h3>
                 <div className="flex gap-3 sm:gap-4">
@@ -149,15 +149,6 @@ const ContactForm = () => {
                     {
                       icon: facebook,
                       link: "https://web.facebook.com/search/top?q=sixth%20sense%20leadership",
-                    },
-
-                    {
-                      icon: twitter,
-                      link: "#",
-                    },
-                    {
-                      icon: youtube,
-                      link: "#",
                     },
                   ].map(({ icon, link }, idx) => (
                     <a
@@ -180,13 +171,13 @@ const ContactForm = () => {
 
           {/* RIGHT COLUMN */}
           <div className="w-full 2xl:w-[70%] md:w-[100%] sm:w-[100%] p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
-            <h2 className="font-semibold text-[18px] sm:text-[19px] md:text-[20px] mb-2">
+            <h2 className="font-medium text-[18px] sm:text-[19px] md:text-[22px] mb-2">
               Send Message
             </h2>
-            <p className="text-[13px] sm:text-[14px] md:text-[15px] mb-4 ">
-              We're here to listen and help you! Whether you have questions,
+            <p className="text-[13px] sm:text-[16px] md:text-[19px] mb-4 ">
+              We’re here to listen and help you! Whether you have questions,
               ideas, or feedback, your thoughts are important to us. Reach out
-              today, and let's start a meaningful conversation!
+              today, and let’s start a meaningful conversation!
             </p>
 
             <form

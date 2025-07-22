@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../../assets/Services/R1.webp";
+import img1 from "../../../assets/Services/R1.png";
 import img2 from "../../../assets/Services/R2.webp";
 import img3 from "../../../assets/Services/R3.webp";
 
@@ -23,7 +23,7 @@ const GalleryCard = ({ img, index, tall = false }) => {
 
 const RetreatPictures = () => {
   return (
-    <section className="bg-light pt-10 lg:pb-20 pb-10 px-4 sm:px-6 md:px-10">
+    <section className="bg-white pt-10 lg:pb-40 pb-20 px-4 sm:px-6 md:px-10">
       <div className="max-w-5xl mx-auto">
         {/* Mobile View */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:hidden">
@@ -33,14 +33,14 @@ const RetreatPictures = () => {
         </div>
 
         {/* Desktop View - Centered 3-image layout */}
-        <div className="hidden lg:flex justify-center gap-3">
+        <div className="hidden lg:flex justify-center gap-1">
           {/* Left tall image */}
-          <div className="w-[400px]">
+          <div className="flex-[3]">
             <GalleryCard img={img1} index={0} tall />
           </div>
 
           {/* Right column with two stacked images */}
-          <div className="w-[500px] flex flex-col gap-3">
+          <div className="flex-[3] flex flex-col gap-3">
             <GalleryCard img={img2} index={1} />
             <GalleryCard img={img3} index={2} />
           </div>

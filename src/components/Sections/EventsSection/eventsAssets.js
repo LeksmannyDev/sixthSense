@@ -12,11 +12,13 @@ import lmcGraphic from "../../../assets/Events/LmcGraphic.png";
 import lmcGraphic2 from "../../../assets/Events/LmcGraphic2.svg";
 import Profile from "../../../assets/Events/principal.webp";
 import methodology from "../../../assets/Events/Infographics.webp";
-import tlcClass from "../../../assets/Events/Tlmclass.png";
-import lmcClass from "../../../assets/Events/lmcClass.png";
+import tlcClass from "../../../assets/Events/Tlmclass.webp";
+import lmcClass from "../../../assets/Events/lmcClass.webp";
 import mp3Class from "../../../assets/Events/mp3Class.webp";
 import mp3Banner from "../../../assets/Events/mp3Banner.webp";
 import lmcBanner from "../../../assets/Events/lmcBanner.png";
+import lmc from "../../../assets/What/lmc.png";
+import lmr from "../../../assets/What/lmr.png";
 
 export const eventAsset = {
   background1,
@@ -28,6 +30,8 @@ export const eventAsset = {
   banner2,
   program,
   news,
+  lmc,
+  lmr,
   eventBanner,
   lmcGraphic,
   lmcGraphic2,
@@ -45,37 +49,37 @@ export const objectives = [
     number: "01",
     title: "Build Strong Leadership<br/>Foundations",
     description:
-      "Equip participants with essential leadership principles and practical skills to influence, lead teams with purpose, and create lasting impact.",
+      "Equip participants with leadership principles and skills to lead with purpose and create impact.",
   },
   {
     number: "02",
     title: "Enhance Strategic<br/>Thinking",
     description:
-      "Strengthen participants' critical thinking abilities, enabling them to anticipate challenges and make strategic decisions that drive long-term success.",
+      "Enhance participants' critical thinking to anticipate challenges and make strategic decisions for long-term success.",
   },
   {
     number: "03",
     title: "Develop Adaptive<br/> Leadership Skills",
     description:
-      "Prepare participants to lead through change, uncertainty, and disruption by fostering resilience, flexibility, and a growth mindset.",
+      "Prepare participants to lead through change by fostering resilience, flexibility, and a growth mindset.",
   },
   {
     number: "04",
     title: "Foster Innovation <br/>and Creativity",
     description:
-      "Inspire participants to cultivate a culture of innovation, encouraging creative problem-solving and fresh approaches to emerging challenges.",
+      "Inspire participants to foster a culture of innovation and creative problem-solving for emerging challenges.",
   },
   {
     number: "05",
     title: "Master Change<br/>Management",
     description:
-      "Provide actionable tools and frameworks for effectively leading change, ensuring smooth transitions and positive organizational outcomes.",
+      "Provide tools and frameworks for leading change, ensuring smooth transitions and positive outcomes.",
   },
   {
     number: "06",
     title: "Create Ripple Effects of <br/> Lasting Transformation",
     description:
-      "Empower participants to drive and sustain positive change that impacts organizations.",
+      "Empower participants to drive and sustain positive organizational change.",
   },
 ];
 
@@ -273,48 +277,39 @@ export const courseModules = [
 
 export const gain = [
   {
+    number: "01",
     title: "Enhanced<br/> Leadership Impact",
     description:
-      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+      "Cultivate a 360-degree leadership mindset to inspire and manage diverse teams for peak performance.",
   },
   {
+    number: "02",
     title: "Optimized<br/> Operational Processes",
     description:
-      "Master techniques for streamlining workflows, eliminating inefficiencies, and ensuring smooth day-to-day operations",
+      "Master techniques to streamline workflows, eliminate inefficiencies, and ensure smooth operations.",
   },
   {
+    number: "03",
     title: "Strategic<br/> Decision-Making",
     description:
-      "Gain tools to analyse complex scenarios and make data-driven decisions that drive organizational success",
+      "Gain tools to analyze complex scenarios and make data-driven decisions for organizational success.",
   },
   {
+    number: "04",
     title: "Performance-Driven<br/> Culture",
     description:
-      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+      "Learn to foster accountability, measure outcomes, and align team efforts with goals.",
   },
   {
+    number: "05",
     title: "Effective<br/> Communication and <br/>Influence",
     description:
-      "Build advanced communication skills to articulate vision, provide constructive feedback, and manage stakeholder expectations",
+      "Build advanced communication skills to articulate vision, give feedback, and manage expectations.",
   },
   {
+    number: "06",
     title: "Conflict Resolution and <br/> Team Cohesion",
     description:
-      "Acquire strategies to navigate workplace challenges, resolve conflicts, and enhance collaboration within teams",
-  },
-  {
-    title: "Enhanced<br/> Leadership Impact",
-    description:
-      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
-  },
-  {
-    title: "Sustainable Leadership<br/> Growth",
-    description:
-      "Cultivate a 360-degree leadership mindset to navigate challenges, stand for change, and prepare for senior roles",
-  },
-  {
-    title: "Enhanced<br/> Leadership Impact",
-    description:
-      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+      "Acquire strategies to navigate challenges, resolve conflicts, and enhance team collaboration.",
   },
 ];

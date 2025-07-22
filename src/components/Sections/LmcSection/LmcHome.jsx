@@ -6,7 +6,6 @@ const LmcHome = () => {
   return (
     <EventHomeDesign
       backgroundImage={eventAsset.background2}
-      topText="LEADERSHIP MASTERY CIRCLE (LMC)"
       title={
         <>
           Raise Your

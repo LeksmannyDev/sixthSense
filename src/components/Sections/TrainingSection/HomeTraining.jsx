@@ -5,7 +5,11 @@ import { assets } from "../../../assets/asset";
 const HomeTraining = () => {
   return (
     <ServicesHomeDesign
-      title="executive training"
+      title={
+        <>
+          executive <br /> Coaching
+        </>
+      }
       backgroundImage={assets.trainingBackground}
     />
   );

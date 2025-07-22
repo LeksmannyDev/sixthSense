@@ -39,11 +39,11 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="bg-gradient-blue w-full px-4 sm:px-10 lg:px-20 py-12 lg:py-20 flex flex-col items-center gap-4">
+    <div className="bg-gradient-blue w-full px-4 sm:px-10 lg:px-10 py-12 lg:py-20 flex flex-col items-center ">
       {/* Row: Icon + Form with horizontal gap on desktop */}
       <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-x-30 xl:gap-x-60">
         {/* Title + Icon */}
-        <div className="flex items-center gap-3 text-white justify-center">
+        <div className="flex items-center gap-1 text-white justify-center">
           <img src={assets.mail} alt="Mail icon" className="h-10 w-10" />
           <span className="font-medium text-sm sm:text-base md:text-lg mt-1 text-center">
             SUBSCRIBE TO NEWSLETTER

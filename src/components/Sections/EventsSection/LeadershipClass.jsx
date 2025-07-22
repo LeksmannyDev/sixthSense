@@ -6,12 +6,12 @@ const LeadershipClass = () => {
     <section className="bg-light py-25 px-4 sm:px-6 md:px-10">
       <div className="text-gray max-w-5xl text-justify mx-auto">
         {/* Heading */}
-        <h1 className="text-3xl md:text-[40px] font-medium text-center text-blue mb-8">
-          TURN DISRUPTION INTO YOUR GREATEST OPPORTUNITY!
+        <h1 className="text-2xl md:text-3xl lg:text-[37px] font-medium text-center text-blue mb-8">
+          TURN DISRUPTION INTO <br /> YOUR GREATEST OPPORTUNITY!
         </h1>
 
         {/* Intro Paragraph */}
-        <p className="text-base sm:text-lg md:text-[21px]">
+        <p className="text-base sm:text-lg md:text-xl">
           In today’s world where change and disruption are constant,
           organizations must adapt or risk falling behind. Rapid advancements in
           technology, evolving business models, shifting policies, and external
@@ -45,7 +45,7 @@ const LeadershipClass = () => {
         </div>
 
         {/* Program Overview Paragraph */}
-        <p className="text-base sm:text-lg md:text-[21px] tracking-wide">
+        <p className="text-base sm:text-lg md:text-xl">
           Led by a high-level faculty of industry captains and seasoned experts,
           this exclusive programme offers an immersive exploration into adaptive
           leadership, strategic thinking, and change management. Through
@@ -56,7 +56,7 @@ const LeadershipClass = () => {
           <br />
           Leaders who go through this program will emerge as resilient,
           visionary leaders, ready to inspire innovation and foster a culture of
-          change-readiness—creating ripple effects of positive, lasting
+          change-readiness, creating ripple effects of positive, lasting
           transformation where it’s needed most.
         </p>
       </div>

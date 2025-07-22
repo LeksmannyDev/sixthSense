@@ -2,15 +2,16 @@ import React from "react";
 
 const ContactMap = () => {
   return (
-    <section className="py-12 bg-[#f5f5f5] px-4 sm:px-6 lg:px-24">
+    <section className="md:py-25 py-12 bg-[#f5f5f5] px-4 sm:px-6 lg:px-24">
       <div className="max-w-5xl mx-auto mb-14 text-center">
         <h2 className="text-3xl sm:text-4xl text-blue font-medium mb-4 ">
           Find Us on Google Maps
         </h2>
-        <p className="text-sm sm:text-xl text-gray mb-10">
-          Looking for directions? Click here to find us on Google Maps! We’re
-          excited to welcome you to our location and ensure you have a smooth
-          journey.
+        <p className="text-base sm:text-xl max-w-120 mx-auto text-gray mb-10">
+          Looking for directions?
+          <br /> Click here to find us on Google Maps!
+          <br /> We’re excited to welcome you to our location and ensure you
+          have a smooth journey.
         </p>
         <div className="overflow-hidden rounded-xl shadow-lg w-full h-[300px] sm:h-[400px] md:h-[550px]">
           <iframe

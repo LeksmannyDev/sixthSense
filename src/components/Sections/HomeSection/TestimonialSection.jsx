@@ -34,10 +34,11 @@ const TestimonialSection = () => {
               What Our Clients Say
             </h2>
           </div>
-          <p className="text-gray mx-auto lg:max-w-md w-80% lg:mr-0 lg:mt-5 mt-0 text text-[18px]">
-            At SixthSense Leadership, we value the feedback from our clients.
-            Here’s what some of our satisfied partners have to say about their
-            experiences with our leadership programs and services.
+          <p className="text-gray mx-auto font-normal lg:max-w-md w-80% lg:mr-0 lg:mt-5 mt-0 text text-[18px]">
+            At <strong>SixthSense Leadership</strong>, we value the feedback
+            from our clients. Here’s what some of our satisfied partners have to
+            say about their experiences with our leadership programs and
+            services.
           </p>
         </div>
 
@@ -66,22 +67,19 @@ const TestimonialSection = () => {
                       : "scale-80 opacity-70 hidden lg:block"
                   }`}
                 >
-                  <div className="bg-white border-[0.5px] border-[#FF0C10] rounded-4xl p-5 sm:p-6 min-h-[300px] shadow flex flex-col items-center justify-center h-full text-center">
+                  <div className="bg-white border-[0.5px] border-[#003366] rounded-4xl p-5 sm:p-6 min-h-[300px] shadow flex flex-col items-center justify-center h-full text-center">
                     <p className="text-gray text-sm sm:text-base mb-4">
                       {testimonials[index].quote}
                     </p>
-                    <div className="flex items-center justify-center gap-3 mt-4">
+                    <div className="flex items-center justify-center gap-1 mt-4">
                       <img
                         src={testimonials[index].logo}
                         alt="client logo"
-                        className="w-6 h-6 object-contain"
+                        className="w-12 h-12 object-contain"
                       />
                       <div className="text-left">
                         <p className="text-red font-semibold text-xs sm:text-sm">
                           {testimonials[index].client}
-                        </p>
-                        <p className="text-xs text-gray">
-                          {testimonials[index].company}
                         </p>
                       </div>
                     </div>
@@ -94,7 +92,7 @@ const TestimonialSection = () => {
           {/* Right Arrow */}
           <button
             onClick={handleNext}
-            className="absolute right-0 sm:right-3 z-20 bg-white border p-2 sm:p-3 rounded-full shadow-md hover:bg-red-100 transition"
+            className="absolute right-0 sm:right-3 z-20 bg-white border p-2 sm:p-3 rounded-full shadow-md hover:bg-[#e0f7fa] transition"
             aria-label="Next testimonial"
           >
             <ChevronRight size={20} />

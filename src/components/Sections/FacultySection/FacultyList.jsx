@@ -6,47 +6,30 @@ const FacultyList = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-24 bg-light">
       <div className="text-gray max-w-5xl text-justify mx-auto">
         <div className="mb-10 space-y-5 text-lg leading-relaxed">
-          <p className="text-base sm:text-lg md:text-[21px]">
-            Our faculty is a distinguished team of accomplished professionals,
-            industry veterans, and thought leaders with a combined experience of
-            over 200 years. With diverse educational backgrounds from leading
-            institutions both within and outside the country, our experts are
-            well-versed in cutting-edge tools, techniques, and methodologies for
-            delivering impactful physical and virtual training programmes.
-            <br /> <br />
-            They include fellows and certified members of prestigious
-            professional bodies such as the Nigerian Institute of Management
-            (NIM), Chartered Institute of Personnel Management (CIPM),
-            International Council of Management Consulting Institutes (ICMCI),
-            Institute of Management Consulting Nigeria (IMC), Chartered
-            Institute of Information and Strategy Management (CIISM), and
-            Chartered Institute of Directors (IoD), among others. <br /> <br />{" "}
-            Our faculty members bring a unique blend of extensive knowledge,
-            practical experience, and innovative approaches to every training
-            programme. They have collectively designed, implemented, and
-            facilitated learning solutions for at least one of the top three
-            brands across various sectors, including telecommunications, banking
-            and finance, technology, oil and gas, food and agriculture, and
-            manufacturing.
-            <br />
-            <br /> Dedicated to developing talent and driving impactful learning
-            experiences, our faculty uses highly interactive methods such as
-            expert-led discussions, real-world simulations, case studies, and
-            hands-on activities. By drawing on their career experiences and
-            current best practices, they ensure participants gain actionable
-            insights and the confidence to excel in their roles.
-            <br />
-            <br />
-            With a steadfast commitment to continuous learning, our faculty
-            regularly updates content to reflect the latest trends,
-            technologies, and methodologies. This ensures our training programs
-            remain relevant, forward-thinking, and aligned with the evolving
-            demands of today's business environment.
-            <br />
-            <br /> Our faculty's passion for teaching, commitment to excellence,
-            and diverse expertise make them invaluable to our training
-            initiatives, guiding leaders toward exceptional results and lasting
-            success in their roles.
+          <p className="text-base sm:text-lg md:text-[19.5px]">
+            Our faculty comprises a distinguished group of accomplished
+            professionals, industry veterans, and certified experts with a
+            combined experience of over 200 years. Educated at leading
+            institutions within and outside the country, they bring deep
+            subject-matter expertise and a solid grasp of contemporary
+            leadership and management practices. Many are fellows and members of
+            respected professional bodies, including the Nigerian Institute of
+            Management (NIM), Chartered Institute of Personnel Management
+            (CIPM), International Council of Management Consulting Institutes
+            (ICMCI), and the Institute of Directors (IoD). Collectively, they
+            have delivered high-impact training for top organisations across
+            sectors such as banking, telecommunications, oil and gas,
+            technology, and agribusiness.
+            <br /> <br />A distinguishing factor of our faculty is their ability
+            to translate experience into practical, results-oriented learning.
+            Each programme is built around proven methodologies, real-world case
+            studies, and interactive sessions designed to engage participants
+            and drive performance. Their commitment to continuous learning
+            ensures that course content reflects current trends, emerging tools,
+            and evolving business needs. With a shared passion for excellence,
+            they consistently equip leaders at all levels with the insight,
+            skills, and confidence to navigate complexity and deliver meaningful
+            outcomes.
           </p>
         </div>
 
@@ -66,8 +49,13 @@ const FacultyList = () => {
                   className="w-full h-full"
                 />
               </div>
-              <p className="mt-4 sm:mt-6 text-sm md:text-base lg:text-[19px] text-deepBlue font-light">
-                {member.name}
+              <p className="mt-4 sm:mt-6 text-sm md:text-base lg:text-[19px] text-deepBlue">
+                <span className="font-medium">
+                  {member.name.replace(/ MCloD, FIMC, CMC$/, "")}
+                </span>
+                {member.name.includes("MCloD, FIMC, CMC") && (
+                  <span className="font-normal"> MCloD, FIMC, CMC</span>
+                )}
               </p>
             </a>
           ))}

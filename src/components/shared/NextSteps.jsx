@@ -2,9 +2,9 @@ import React from "react";
 
 const NextSteps = ({ text, buttonLink }) => {
   return (
-    <section className="bg-white text-center py-20 sm:py-28 px-4 sm:px-6 md:px-10">
+    <section className="bg-white text-center py-12 sm:py-20 px-4 sm:px-6 md:px-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-blue mb-4 uppercase">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-blue mb-5 uppercase">
           Take Next Steps
         </h2>
 

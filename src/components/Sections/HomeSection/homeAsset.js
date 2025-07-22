@@ -17,6 +17,15 @@ import finglow from "../../../assets/Home/finglow.png";
 import banner1 from "../../../assets/Home/Banner1.webp";
 import prevArrow from "../../../assets/Home/leftArrow.svg";
 import nextArrow from "../../../assets/Home/nextArrow.svg";
+import Leading from "../../../assets/What/Leading.png";
+import Teams from "../../../assets/What/Teams.png";
+import Data from "../../../assets/What/Data.png";
+import Public from "../../../assets/What/Public.png";
+import Women from "../../../assets/What/Women.png";
+import Sales from "../../../assets/What/Sales.png";
+import Finance from "../../../assets/What/Finance.png";
+import GenZ from "../../../assets/What/GenZ.png";
+import Executive from "../../../assets/What/Executive.png";
 
 export const homeAsset = {
   homeBanner1,
@@ -80,7 +89,7 @@ export const chooseUs = [
     title: "Unparalleled Expertise",
     icon: unparalled,
     description:
-      "Our faculty have trained top brands across Nigeria's key sectors.",
+      "Our faculty has trained and consulted for top brands across Nigeria's key sectors.",
   },
   {
     title: "Personalized Approach",
@@ -99,23 +108,76 @@ export const testimonials = [
   {
     quote:
       "The coaching I received from SixthSense Leadership was a game-changer for me. I gained clarity in my vision and improved my decision-making skills. I can confidently lead my team towards our goals now.",
-    client: "CLIENT NAME",
-    company: "The Zylus Team",
+    client: "The Zylus Team",
     logo: zylus,
   },
   {
     quote:
       "SixthSense Leadership helped us reshape our organizational culture. The workshops were not only informative but also engaging. Our team is now more collaborative and innovative than ever!",
-    client: "CLIENT NAME",
-    company: "FBN Insurance Brokers",
-    logo: roland,
+    client: "Finchglow Holdings",
+    logo: finglow,
   },
-
   {
     quote:
       "SixthSense Leadership helped us reshape our organizational culture. The workshops were not only informative but also engaging. Our team is now more collaborative and innovative than ever!",
-    client: "CLIENT NAME",
-    company: "Finchglow Holdings",
-    logo: finglow,
+    client: "FBN Insurance Brokers",
+    logo: roland,
+  },
+];
+
+export const executiveProgram = [
+  {
+    icon: Leading,
+    title: "Leading with\n Emotional Intelligence",
+    description:
+      "Develop the skills to understand, manage, and leverage emotions for effective leadership and stronger team dynamics.",
+  },
+  {
+    icon: Data,
+    title: "Data-Driven\n Leadership",
+    description:
+      "Learn to make informed decisions by analyzing and interpreting data to drive strategic business outcomes.",
+  },
+  {
+    icon: Public,
+    title: "Public Speaking &\n  Communication in Leadership ",
+    description:
+      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+  },
+  {
+    icon: Women,
+    title: "Women in\n Leadership",
+    description:
+      "Equip women leaders with the tools, strategies, and confidence to thrive and lead in diverse and dynamic environments.",
+  },
+  {
+    icon: Sales,
+    title: "Sales\n Leadership",
+    description:
+      "Build the expertise to drive sales performance, motivate teams, and achieve revenue goals with strategic leadership.",
+  },
+  {
+    icon: Executive,
+    title: "Executive Presence\n & Personal Branding",
+    description:
+      "Develop the ability to inspire, engage, and manage diverse teams to achieve peak performance.",
+  },
+  {
+    icon: Finance,
+    title: "Finance for\n Non-Finance Managers",
+    description:
+      "Gain essential financial knowledge and tools to make sound decisions and contribute to your organization's financial success.",
+  },
+  {
+    icon: GenZ,
+    title: "Leading Gen Zs\n in the Workplace",
+    description:
+      "Understand how to attract, engage, and develop the talent of the future for long-term organizational success.",
+  },
+  {
+    icon: Teams,
+    title: "Leading\n High-performing Teams",
+    description:
+      "Build competencies to implement practices that empower teams to consistently exceed targets and adapt to evolving challenges",
   },
 ];

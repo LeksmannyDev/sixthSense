@@ -6,12 +6,12 @@ const Mp3Class = () => {
     <section className="bg-light py-20 px-4 sm:px-6 lg:px-24">
       <div className="text-gray max-w-5xl text-justify mx-auto">
         {/* Heading */}
-        <h1 className="text-3xl md:text-[40px] font-medium text-center text-blue mb-8">
-          STRENGTHEN <br /> YOUR MIDDLE!
+        <h1 className="text-2xl md:text-3xl lg:text-[37px] font-medium text-center text-blue mb-8">
+          STRENGTHEN YOUR MIDDLE!
         </h1>
 
         {/* Intro Paragraph */}
-        <p className="text-base sm:text-lg md:text-[21px]">
+        <p className="text-base sm:text-lg md:text-xl">
           Imagine a fast-growing organization grappling with the pains of
           success. Their strategy was clear, their goals ambitious, yet results
           fell short of expectations. Teams were disengaged, processes were
@@ -43,18 +43,20 @@ const Mp3Class = () => {
         </div>
 
         {/* Program Overview Paragraph */}
-        <p className="text-base sm:text-lg md:text-[21px]">
+        <p className="text-base sm:text-lg md:text-xl">
           This scenario is all too common. Research shows that middle management
           plays a pivotal role in driving organizational success, yet many are
           under-equipped to navigate the complexities of their roles.
           <br />
           <br /> The{" "}
-          <span className="font-semibold">
+          <span className="font-semibold text-red">
             MP3 Masterclass: Managing People, Processes, and Performance
           </span>{" "}
           was created to precisely address this challenge. This results-driven
           programme equips middle-level leaders with the frameworks and skills
-          to:{" "}
+          to:
+        </p>
+        <ul className="list-disc md:py-7 py-4 px-7 md:px-14 text-base sm:text-lg md:text-xl text-gray">
           <li>Build and sustain effective teams that deliver on objectives.</li>
           <li>
             Streamline processes to eliminate inefficiencies and foster
@@ -64,6 +66,8 @@ const Mp3Class = () => {
             Drive consistent, high-level performance aligned with organizational
             goals.
           </li>
+        </ul>
+        <p className="text-base sm:text-lg md:text-xl">
           Through a blend of immersive learning, real-world case studies, and
           actionable tools, participants leave empowered to bridge the gap
           between strategy and execution—turning management challenges into

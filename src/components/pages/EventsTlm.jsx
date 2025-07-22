@@ -19,7 +19,7 @@ const EventsTlm = () => {
       <QuoteBanner />
       <LeadershipClass />
       {/* <GallerySection title="Images from our last Session" /> */}
-      <Countdown />
+      {/* <Countdown /> */}
       <EventBanner1 />
       <Objectives />
       {/* <ProgramStructure /> */}

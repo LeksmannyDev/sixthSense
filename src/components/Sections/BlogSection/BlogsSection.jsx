@@ -18,7 +18,7 @@ const BlogsSection = () => {
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sixthsenseleadership`
+          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zulie_at_medium`
         );
 
         if (res.data.status === "ok") {
@@ -143,7 +143,7 @@ const BlogsSection = () => {
                       href={blog.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-red font-medium text-xs sm:text-sm border border-[#FF0C10] rounded-full px-2 py-1 underline flex items-center gap-1"
+                      className="text-red font-medium text-xs sm:text-sm border border-[#FF0C10] rounded-full px-2 py-1 underline flex items-center gap-1 hover:bg-[#E2EDFF] transition duration-300"
                     >
                       view more
                       <img
@@ -168,7 +168,7 @@ const BlogsSection = () => {
             <button
               className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-base px-5 sm:px-10 md:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300 hover:bg-red-700"
               onClick={() =>
-                window.open("https://medium.com/@alessbutler", "_blank")
+                window.open("https://medium.com/@zulie_at_medium", "_blank")
               }
             >
               LOAD MORE....

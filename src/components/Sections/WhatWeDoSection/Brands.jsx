@@ -16,24 +16,30 @@ const Brands = () => {
     { image: boi, name: "BOI" },
   ];
 
+  const duplicatedImages = [...images, ...images];
+
   return (
-    <div className="bg-white py-15 pb-20 px-4 sm:px-6 md:px-10 text-center">
-      <h2 className="text-2xl md:text-[45px] font-medium text-blue mb-10 sm:mb-2">
-        Brands our Faculty has Trained
+    <div className="bg-white lg:py-25 py-15 px-4 sm:px-6 md:px-10 text-center">
+      <h2 className="text-2xl sm:text-3xl md:text-[45px] font-medium text-blue mb-10 sm:mb-2">
+        Some Brands our Faculty has Trained
       </h2>
-      <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row gap-4 md:gap-2">
-        {images.map((item, index) => (
-          <div
-            key={index}
-            className="mx-auto py-3 sm:py-10 md:py-10 flex items-center cursor-pointer justify-center"
-          >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="max-h-14 object-contain"
-            />
-          </div>
-        ))}
+
+      {/* Container for the scrolling animation */}
+      <div className="max-w-6xl mx-auto overflow-hidden">
+        <div className="animate-scroll flex gap-8 md:gap-12">
+          {duplicatedImages.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 py-3 sm:py-10 md:py-10 flex items-center justify-center min-w-[120px] md:min-w-[150px]"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="max-h-14 object-contain hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
