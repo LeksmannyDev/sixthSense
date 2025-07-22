@@ -18,7 +18,7 @@ const BlogsSection = () => {
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zulie_at_medium`
+          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sixthsenseleadership`
         );
 
         if (res.data.status === "ok") {
@@ -127,7 +127,7 @@ const BlogsSection = () => {
                   </p>
                   <div className="flex justify-between items-center mt-auto">
                     <a
-                      href="https://medium.com/@alessbutler"
+                      href="https://medium.com/@sixthsenseleadership"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#007AFF] font-medium text-sm md:text-base flex items-center gap-2"
@@ -168,7 +168,10 @@ const BlogsSection = () => {
             <button
               className="bg-red text-white uppercase cursor-pointer text-xs sm:text-sm md:text-base px-5 sm:px-10 md:px-14 py-2 sm:py-3 rounded-full font-medium transition duration-300 hover:bg-red-700"
               onClick={() =>
-                window.open("https://medium.com/@zulie_at_medium", "_blank")
+                window.open(
+                  "https://medium.com/@sixthsenseleadership",
+                  "_blank"
+                )
               }
             >
               LOAD MORE....

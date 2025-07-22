@@ -126,7 +126,7 @@ export const facultyList = [
     linkedin: "https://www.linkedin.com/in/brightuk/",
   },
   {
-    name: "DEMOLA ADERIBIGBIE",
+    name: "DEMOLA ADERIBIGBE",
     image: faculty2,
     linkedin: "https://www.linkedin.com/in/demola-aderibigbe-26484447//",
   },
