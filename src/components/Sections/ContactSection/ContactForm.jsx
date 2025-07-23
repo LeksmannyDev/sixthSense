@@ -58,10 +58,10 @@ const ContactForm = () => {
   };
   return (
     <section id="contact" className="bg-white overflow-x-hidden text-gray">
-      <div className="py-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 max-w-[90%] sm:max-w-[85%] md:max-w-[80%] mx-auto">
+      <div className="md:py-25 py-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 max-w-[90%] sm:max-w-[85%] md:max-w-[85%] mx-auto">
         <div className="flex flex-col items-center justify-center lg:flex-row gap-6 md:gap-8 lg:gap-10">
           {/* LEFT COLUMN */}
-          <div className="w-full 2xl:w-[30%] md:w-[100%] sm:w-[100%] space-y-4 md:space-y-6">
+          <div className="w-full 2xl:w-[35%] md:w-[100%] sm:w-[100%] space-y-4 md:space-y-6">
             {[
               { img: phone, title: "Phone Number", desc: "+234 708 040 1080" },
               {
@@ -170,7 +170,7 @@ const ContactForm = () => {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="w-full 2xl:w-[70%] md:w-[100%] sm:w-[100%] p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
+          <div className="w-full 2xl:w-[65%] md:w-[100%] sm:w-[100%] p-4 sm:p-5 md:p-6 shadow bg-white rounded-md">
             <h2 className="font-medium text-[18px] sm:text-[19px] md:text-[22px] mb-2">
               Send Message
             </h2>

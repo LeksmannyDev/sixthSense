@@ -7,7 +7,7 @@ const BackgroundDesign = ({ children, initialBackground, mode = "static" }) => {
     initialBackground,
     assets.home,
     homeAsset.homeBanner1,
-    assets.whoBanner,
+    // assets.whoBanner,
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
