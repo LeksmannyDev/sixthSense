@@ -5,6 +5,7 @@ const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,23 +24,47 @@ const Newsletter = () => {
           body: JSON.stringify({
             email,
             timestamp: new Date().toISOString(),
-            // source: "website",
           }),
         }
       );
 
       setMessage("Successfully subscribed to newsletter!");
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 6000);
       setEmail("");
     } catch (error) {
       console.error("Subscription error:", error);
       setMessage("Something went wrong. Please try again.");
+      setShowPopup(true);
+      setTimeout(() => setShowPopup(false), 6000);
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="bg-gradient-blue w-full px-4 sm:px-10 lg:px-10 py-12 lg:py-20 flex flex-col items-center ">
+    <div className="relative bg-gradient-blue w-full px-4 sm:px-10 lg:px-10 py-12 lg:py-20 flex flex-col items-center">
+      {/* Popup Alert */}
+      {showPopup && (
+        <div
+          className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 px-10 py-4 rounded-xl shadow-lg text-center text-base md:text-lg font-medium transition-all duration-300 ${
+            message.includes("Successfully")
+              ? "bg-gradient-blue text-white"
+              : "bg-red-600 text-white"
+          }`}
+        >
+          <div className="flex items-center justify-between gap-4">
+            <span>{message}</span>
+            <button
+              onClick={() => setShowPopup(false)}
+              className="text-4xl font-bold"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Row: Icon + Form with horizontal gap on desktop */}
       <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-x-30 xl:gap-x-60">
         {/* Title + Icon */}
@@ -74,17 +99,6 @@ const Newsletter = () => {
           </button>
         </form>
       </div>
-
-      {/* Message under the form */}
-      {message && (
-        <p
-          className={`text-center text-sm sm:text-base font-medium ${
-            message.includes("Successfully") ? "text-white" : "text-red"
-          }`}
-        >
-          {message}
-        </p>
-      )}
     </div>
   );
 };
