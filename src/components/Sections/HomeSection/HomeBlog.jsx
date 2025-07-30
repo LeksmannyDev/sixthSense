@@ -19,16 +19,20 @@ const HomeBlog = () => {
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sixthsenseleadership`
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sixthsenseleadership"
         );
+
         if (res.data.status === "ok") {
-          setBlogs(res.data.items.slice(0, 9));
+          const allPosts = res.data.items || [];
+          const limitedPosts =
+            allPosts.length > 9 ? allPosts.slice(0, 9) : allPosts;
+          setBlogs(limitedPosts);
         } else {
           throw new Error(res.data.message || "Failed to fetch blogs");
         }
-      } catch (err) {
-        console.error("Blog fetch error:", err);
-        setError(err.message);
+      } catch (error) {
+        console.error("Error fetching Medium blogs:", error);
+        setError(error.message);
       } finally {
         setLoading(false);
       }
