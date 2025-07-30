@@ -13,8 +13,16 @@ const BlogsSection = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint
+    };
+
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
@@ -23,9 +31,10 @@ const BlogsSection = () => {
 
         if (res.data.status === "ok") {
           const allPosts = res.data.items || [];
-          const limitedPosts =
-            allPosts.length > 9 ? allPosts.slice(0, 9) : allPosts;
-          setBlogs(limitedPosts);
+          const postLimit = allPosts.length > 9 ? 9 : allPosts.length;
+          const mobileLimit = allPosts.length > 6 ? 6 : allPosts.length;
+          const sliced = allPosts.slice(0, isMobile ? mobileLimit : postLimit);
+          setBlogs(sliced);
         } else {
           throw new Error(res.data.message || "Failed to fetch blogs");
         }
@@ -38,7 +47,9 @@ const BlogsSection = () => {
     };
 
     fetchBlogs();
-  }, []);
+
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, [isMobile]);
 
   const extractImage = (description, index) => {
     try {

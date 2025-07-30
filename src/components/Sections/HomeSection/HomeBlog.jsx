@@ -14,8 +14,14 @@ const HomeBlog = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 640); // Tailwind's sm breakpoint
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
@@ -39,6 +45,8 @@ const HomeBlog = () => {
     };
 
     fetchBlogs();
+
+    return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
   const extractImage = (description, index) => {
@@ -110,8 +118,8 @@ const HomeBlog = () => {
 
           {/* Blog Cards */}
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-            {[0, 1, 2].map((offset) => {
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+            {Array.from({ length: isMobile ? 1 : 3 }).map((_, offset) => {
               const index = (currentIndex + offset) % blogs.length;
               const blog = blogs[index];
 
