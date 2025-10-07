@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import { ScrollTop, PageTransitionWrapper } from "./ScrollTop";
+import EventPop from "./components/elements/EventPop";
 import Home from "./components/pages/Home";
 import WhoWeAre from "./components/pages/WhoWeAre";
 import Contact from "./components/pages/Contact";
@@ -14,10 +15,12 @@ import Leadership from "./components/pages/Leadership";
 import Training from "./components/pages/Training";
 import Retreat from "./components/pages/Retreat";
 import EventsTlm from "./components/pages/EventsTlm";
+import Events from "./components/pages/Events";
 
 function App() {
   return (
     <Router>
+      <EventPop />
       <ScrollTop />
       <PageTransitionWrapper>
         <Routes>
@@ -107,6 +110,16 @@ function App() {
               <Layout>
                 <PageTransitionWrapper>
                   <Contact />
+                </PageTransitionWrapper>
+              </Layout>
+            }
+          />
+          <Route
+            path="/event"
+            element={
+              <Layout>
+                <PageTransitionWrapper>
+                  <Events />
                 </PageTransitionWrapper>
               </Layout>
             }

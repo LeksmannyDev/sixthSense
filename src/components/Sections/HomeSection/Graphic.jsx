@@ -3,7 +3,7 @@ import { assets } from "../../../assets/asset";
 
 const Graphic = () => {
   return (
-    <section className="w-full overflow-hidden bg-light  py-1 md:py-10 lg:py-20 xl:py-30">
+    <section className="w-full overflow-hidden bg-light xl:pt-10 py-1 md:py-10 lg:py-20 xl:py-30">
       <div className="max-w-5xl pt-10 md:pt-0 mx-auto px-4 sm:px-6 md:px-10 text-center">
         <h2 className="text-2xl md:text-[45px] font-bold text-red mb-2">
           Welcome to

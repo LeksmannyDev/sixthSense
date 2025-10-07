@@ -36,25 +36,25 @@ const Header = () => {
     { label: "who we are", slug: "who-we-are" },
     { label: "what we do", slug: "what-we-do" },
     { label: "our faculty", slug: "our-faculty" },
+    { label: "events", slug: "event" },
     { label: "blog", slug: "blog" },
-    // { label: "events", slug: "events" },
     { label: "contact us", slug: "contact-us" },
   ];
 
-  const pages = [
-    {
-      name: "Transformational Leadership Masterclass (TLM)",
-      path: "/transformational-leadership",
-    },
-    {
-      name: "MP3 Masterclass",
-      path: "/mp3-masterclass",
-    },
-    {
-      name: "Leadership Mastery Circle",
-      path: "/leadership-circle",
-    },
-  ];
+  // const pages = [
+  //   {
+  //     name: "Transformational Leadership Masterclass (TLM)",
+  //     path: "/transformational-leadership",
+  //   },
+  //   {
+  //     name: "MP3 Masterclass",
+  //     path: "/mp3-masterclass",
+  //   },
+  //   {
+  //     name: "Leadership Mastery Circle",
+  //     path: "/leadership-circle",
+  //   },
+  // ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white h-15">
@@ -101,7 +101,7 @@ const Header = () => {
                     </span>
 
                     <ul className="absolute top-full left-0 shadow-lg w-72 text-black opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 invisible z-50 transform -translate-x-4 group-hover:translate-x-0">
-                      {pages.map((subitem) => (
+                      {/* {pages.map((subitem) => (
                         <li key={subitem.path}>
                           <Link
                             to={subitem.path}
@@ -111,7 +111,7 @@ const Header = () => {
                             {subitem.name}
                           </Link>
                         </li>
-                      ))}
+                      ))} */}
                     </ul>
                   </>
                 ) : (
@@ -147,7 +147,7 @@ const Header = () => {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed top-0 right-0 w-full h-screen bg-black z-60 transition-transform duration-300 ease-in-out xl:hidden ${
+          className={`fixed overflow-hidden top-0 right-0 w-full h-screen bg-black z-60 transition-transform duration-300 ease-in-out xl:hidden ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -178,7 +178,7 @@ const Header = () => {
 
                       {eventsOpen && (
                         <ul className="mt-2 max-w-50 mx-auto space-y-4">
-                          {pages.map((subitem) => (
+                          {/* {pages.map((subitem) => (
                             <li key={subitem.path}>
                               <Link
                                 to={subitem.path}
@@ -191,7 +191,7 @@ const Header = () => {
                                 {subitem.name}
                               </Link>
                             </li>
-                          ))}
+                          ))} */}
                         </ul>
                       )}
                     </>

@@ -35,6 +35,7 @@ import homeBg from "../assets/Home/HomeBg.webp";
 import whoBg from "../assets/Home/WhoBg.webp";
 import whatBg from "../assets/Home/WhatBg.webp";
 import facultBg from "../assets/Home/FacultyBg.webp";
+import Events from "../assets/Home/Events.webp";
 import contactBg from "../assets/Home/ContactBg.webp";
 import blogBg from "../assets/Home/StoriesBg.webp";
 import aboutBanner from "../assets/Who/homeBanner.webp";
@@ -49,6 +50,14 @@ import Case from "../assets/What/Case.png";
 import Brainteasers from "../assets/What/Brainteasers.png";
 import Creative from "../assets/What/Creative.png";
 import Role from "../assets/What/Role.png";
+import eventCard from "../assets/Home/eventcard.png";
+import topicIcon from "../assets/Events/topicIcon.svg";
+import calendarIcon from "../assets/Events/calendarIcon.svg";
+import clockIcon from "../assets/Events/clockIcon.svg";
+import locationIcon from "../assets/Events/locationIcon.svg";
+import register from "../assets/Events/register.svg";
+import eventBanner from "../assets/Home/eventBanner.webp";
+import fridayEvent from "../assets/Home/fridayEvent.webp";
 
 export const assets = {
   background,
@@ -84,6 +93,11 @@ export const assets = {
   blogBg,
   whoBanner3,
   trainingBackground,
+  Events,
+  register,
+  eventBanner,
+  eventCard,
+  fridayEvent,
 };
 
 export const coreValues = [
@@ -220,4 +234,74 @@ export const approaches = [
     text: "Interactive exercises to build communication skills and encourage  collaborative learning.",
     color: "bg-[#6a9bc2]",
   },
+];
+export const EVENTS = [
+  {
+    id: "main-event",
+    imageDesktop: assets.eventBanner,
+    link: "https://luma.com/ndyi661x",
+    target: "_blank",
+    endDate: "2025-10-24T23:59:59Z",
+  },
+  {
+    id: "secondary-event",
+    imageDesktop: assets.fridayEvent,
+    link: "/event",
+    target: "_self",
+    endDate: null,
+  },
+];
+export const events = [
+  {
+    title: "SIXTHSENSE LEADERSHIP ROUNDTABLE",
+    description:
+      "​The SixthSense Leaders Roundtable is an invite-only learning and networking event designed to equip founders and executives with strategies and tools to navigate the peculiar challenges of doing business in Africa and seize emerging opportunities.",
+    bullets: [
+      "Surviving and Thriving in the Next Decade: People, Tech and Strategy Systems",
+      "Friday, October 24, 2025",
+      "10:00am",
+      "Four Points by Sheraton, V.I, Lagos",
+    ],
+    icons: [topicIcon, calendarIcon, clockIcon, locationIcon],
+    image: eventCard,
+  },
+  // {
+  //   title: "SIXTHSENSE LEADERSHIP ROUNDTABLE",
+  //   description:
+  //     "​The SixthSense Leaders Roundtable is an invite-only learning and networking event designed to equip founders and executives with strategies and tools to navigate the peculiar challenges of doing business in Africa and seize emerging opportunities.",
+  //   bullets: [
+  //     "Surviving and Thriving in the Next Decade: People, Tech and Strategy Systems",
+  //     "Friday, October 24, 2025",
+  //     "10:00am",
+  //     "Four Points by Sheraton, V.I, Lagos",
+  //   ],
+  //   icons: [topicIcon, calendarIcon, clockIcon, locationIcon],
+  //   image: eventCard,
+  // },
+  // {
+  //   title: "SIXTHSENSE LEADERSHIP ROUNDTABLE",
+  //   description:
+  //     "​The SixthSense Leaders Roundtable is an invite-only learning and networking event designed to equip founders and executives with strategies and tools to navigate the peculiar challenges of doing business in Africa and seize emerging opportunities.",
+  //   bullets: [
+  //     "Surviving and Thriving in the Next Decade: People, Tech and Strategy Systems",
+  //     "Friday, October 24, 2025",
+  //     "10:00am",
+  //     "Four Points by Sheraton, V.I, Lagos",
+  //   ],
+  //   icons: [topicIcon, calendarIcon, clockIcon, locationIcon],
+  //   image: eventCard,
+  // },
+  // {
+  //   title: "SIXTHSENSE LEADERSHIP ROUNDTABLE",
+  //   description:
+  //     "​The SixthSense Leaders Roundtable is an invite-only learning and networking event designed to equip founders and executives with strategies and tools to navigate the peculiar challenges of doing business in Africa and seize emerging opportunities.",
+  //   bullets: [
+  //     "Surviving and Thriving in the Next Decade: People, Tech and Strategy Systems",
+  //     "Friday, October 24, 2025",
+  //     "10:00am",
+  //     "Four Points by Sheraton, V.I, Lagos",
+  //   ],
+  //   icons: [topicIcon, calendarIcon, clockIcon, locationIcon],
+  //   image: eventCard,
+  // },
 ];

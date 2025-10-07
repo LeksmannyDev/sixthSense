@@ -8,11 +8,15 @@ import WhyChooseUs from "../Sections/HomeSection/WhyChooseUs";
 import TestimonialSection from "../Sections/HomeSection/TestimonialSection";
 import HomeBanner2 from "../Sections/HomeSection/HomeBanner2";
 import HomeBlog from "../Sections/HomeSection/HomeBlog";
+import EventSection from "../Sections/HomeSection/EventSection";
+// import EventPop from "../elements/EventPop";
 
 const Home = () => {
   return (
     <>
+      {/* <EventPop /> */}
       <Hero />
+      <EventSection />
       <Graphic />
       <Banner1 />
       <HomeService />

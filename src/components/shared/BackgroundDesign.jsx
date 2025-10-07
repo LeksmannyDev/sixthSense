@@ -46,7 +46,7 @@ const BackgroundDesign = ({ children, initialBackground, mode = "static" }) => {
       {backgrounds.map((bg, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 bg-cover bg-center  transition-opacity duration-1000 ease-in-out ${
             index === currentBgIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{ backgroundImage: `url(${bg})` }}
