@@ -253,9 +253,9 @@ export const EVENTS = [
 ];
 export const events = [
   {
-    title: "SIXTHSENSE LEADERSHIP ROUNDTABLE",
+    title: "BUSINESS LEADERS ROUNDTABLE",
     description:
-      "​The SixthSense Leaders Roundtable is an invite-only learning and networking event designed to equip founders and executives with strategies and tools to navigate the peculiar challenges of doing business in Africa and seize emerging opportunities.",
+      "​The Business Leaders Roundtable is an invite-only learning and networking event designed to equip founders and executives with strategies and tools to navigate the peculiar challenges of doing business in Africa and seize emerging opportunities.",
     bullets: [
       "Surviving and Thriving in the Next Decade: People, Tech and Strategy Systems",
       "Friday, October 24, 2025",
@@ -264,6 +264,7 @@ export const events = [
     ],
     icons: [topicIcon, calendarIcon, clockIcon, locationIcon],
     image: eventCard,
+    link: "https://luma.com/ndyi661x",
   },
   // {
   //   title: "SIXTHSENSE LEADERSHIP ROUNDTABLE",

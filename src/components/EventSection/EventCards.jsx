@@ -44,7 +44,7 @@ const EventCards = () => {
 
                 <div className="flex items-center ">
                   <a
-                    href=""
+                    href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-red font-medium text-xs sm:text-sm border border-[#FF0C10] capitalize rounded-full px-2 py-1 underline flex items-center gap-2 hover:bg-[#E2EDFF] transition duration-300"
