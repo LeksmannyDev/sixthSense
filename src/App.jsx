@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import Layout from "./Layout";
 import { ScrollTop, PageTransitionWrapper } from "./ScrollTop";
 import EventPop from "./components/elements/EventPop";
@@ -18,6 +20,10 @@ import EventsTlm from "./components/pages/EventsTlm";
 import Events from "./components/pages/Events";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-5B7SG8FZCV");
+    ReactGA.send("pageview");
+  }, []);
   return (
     <Router>
       <EventPop />
