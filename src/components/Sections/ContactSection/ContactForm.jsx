@@ -5,10 +5,10 @@ import location from "../../../assets/Contact/location icon.svg";
 import globe from "../../../assets/Contact/website icon.svg";
 import share from "../../../assets/Contact/Vector-4.svg";
 import facebook from "../../../assets/Contact/fb icon.svg";
-import twitter from "../../../assets/Contact/twi icon.svg";
+// import twitter from "../../../assets/Contact/twi icon.svg";
 import linkedin from "../../../assets/Contact/linkedin.png";
 import instagram from "../../../assets/Contact/instagram.png";
-import youtube from "../../../assets/Contact/youtube icon.svg";
+// import youtube from "../../../assets/Contact/youtube icon.svg";
 import { FaPaperPlane, FaCheck, FaExclamationTriangle } from "react-icons/fa";
 
 const ContactForm = () => {
@@ -34,7 +34,8 @@ const ContactForm = () => {
           access_key: "dc1ac2cf-6a33-45f8-a66f-f2f716fa10ef",
           name: formData.get("name"),
           email: formData.get("email"),
-          subject: formData.get("subject"),
+          phone: formData.get("phone"),
+          subject: `New Contact Form Message from ${formData.get("name")} - ${formData.get("subject")}`,
           message: formData.get("message"),
         }),
       });
@@ -46,7 +47,7 @@ const ContactForm = () => {
         e.target.reset();
         setTimeout(
           () => setStatus((prev) => ({ ...prev, success: false })),
-          5000
+          5000,
         );
       } else {
         throw new Error(result.message || "Failed to send message");
@@ -87,7 +88,7 @@ const ContactForm = () => {
               else if (item.title === "Website") link = `https://${item.desc}`;
               else if (item.title === "Location")
                 link = `https://www.google.com/maps/search/${encodeURIComponent(
-                  item.desc
+                  item.desc,
                 )}`;
 
               return (
@@ -212,8 +213,10 @@ const ContactForm = () => {
                 ))}
               </div>
               <textarea
+                name="message"
                 rows="5"
-                placeholder="Subject"
+                required
+                placeholder="Message"
                 className="border-[0.5px] rounded-md border-[#a8a8a8] placeholder:text-[14px] sm:placeholder:text-[15px] md:placeholder:text-[16px] placeholder:text-[#0c0c0c] p-4 sm:p-5 w-full min-h-[120px] max-h-[300px] resize-y"
               ></textarea>
               <button
